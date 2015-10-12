@@ -116,7 +116,7 @@ disqus:
 #################################### global configure #######################################
 
 username: froyot
-baseurl:""
+baseurl:"http://froyot.github.io"
 markdown: redcarpet
 safe: false
 highlighter: pygments
