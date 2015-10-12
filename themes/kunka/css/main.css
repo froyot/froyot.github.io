@@ -735,10 +735,10 @@ a         { color: #91736b; text-decoration: none; }
 
 .icon-zhihu:before {
   content: "知";
-  color:#0078d8;
+
 }
 
 .icon-jianshu:before {
   content: "简";
-  color:#e78170;
+
 }
