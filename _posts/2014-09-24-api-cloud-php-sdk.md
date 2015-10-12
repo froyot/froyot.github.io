@@ -1,12 +1,12 @@
 ---
 layout: post
-title: API Cloud PHP SDK1个人版
+title: API Cloud PHP SDK个人版
 category: 技术
 comments: true
 ---
 
 
-## API Cloud PHP SDK1
+## API Cloud PHP SDK
 因为自己服务器资源有限，所以想要使用apicloud的数据库作为自己项目的存储环境。
 由于之前有些混乱事宜，一直搁置。今日稍有点空闲时间，所以重新开始。apicloud的网站上
 只有node,python,java,c#的代码，竟然没有php的代码。所以，还得码农亲力亲为。
