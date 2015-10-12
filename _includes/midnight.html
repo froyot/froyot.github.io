@@ -42,7 +42,7 @@
                     {% assign active = 'nav-item-active' %}
                   {% endif %}
                   <li class="nav-item {{ active }}">
-                      <a href="{{ site.baseurl }}/{{ link.url }}">
+                      <a href="{{ site.baseurl }}{{ link.url }}">
                           {{ link.text }}
                       </a>
                       {{ indicator }}
