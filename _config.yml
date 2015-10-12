@@ -78,15 +78,14 @@ follow:
   - class: icon-rss
     url: /atom.xml
   - class: icon-weibo
-    url: http://weibo.com
-  - class: icon-renren
-    url: http://renren.com
+    url: http://weibo.com/froyot
+  - class: icon-zhihu
+    url: http://www.zhihu.com/people/wang-xian-long-26
   - class: icon-github-alt
     url: http://github.com
-  - class: icon-twitter
-    url: http://twitter.com
-  - class: icon-google-plus
-    url: http://google.com
+  - class: icon-jianshu
+    url: http://www.jianshu.com/users/cf64e8128c5f/latest_articles
+
 
 #Links
 customLinks:
