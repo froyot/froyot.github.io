@@ -46,7 +46,7 @@ timezone:      null
 title: Allon's Blog
 description: "Allon's Blog, record about web and app developement."
 keywords: "PHP, Android, web app, web developement, python"
-url: /
+url: http://froyot.github.io/
 feed: /atom.xml
 favicon: http://jekyllrb.com/favicon.png
 
