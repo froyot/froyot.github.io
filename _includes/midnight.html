@@ -34,25 +34,25 @@
         <div id="title">
           <h1><a href="{{site.baseurl}}/">{{site.title}}</a></h1>
           <p>{{site.description}}</p>
+          <nav class="nav">
+              <ul>
+                  {% for link in site.nav %}
+                  {% assign active = nil %}
+                  {% if page.url == link.url%}
+                    {% assign active = 'nav-item-active' %}
+                  {% endif %}
+                  <li class="nav-item {{ active }}">
+                      <a href="{{ site.baseurl }}/{{ link.url }}">
+                          {{ link.text }}
+                      </a>
+                      {{ indicator }}
+                  </li>
+                  {% endfor %}
+              </ul>
+            </nav>
           <hr>
           <span class="credits left">Project maintained by <a href="https://github.com/{{site.username}}">{{site.username}}</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme of <a href="https://github.com/briandoll/change-inside-surroundings.vim">midnight</a></span>
-          <nav class="nav">
-                    <ul>
-                        {% for link in site.nav %}
-                        {% assign active = nil %}
-                        {% if page.url == link.url%}
-                          {% assign active = 'nav-item-active' %}
-                        {% endif %}
-                        <li class="nav-item {{ active }}">
-                            <a href="{{ site.baseurl }}/{{ link.url }}">
-                                {{ link.text }}
-                            </a>
-                            {{ indicator }}
-                        </li>
-                        {% endfor %}
-                    </ul>
-          </nav>
         </div>
         <span id="pagetitle">
           <h1>{{page.title}} </h1>
