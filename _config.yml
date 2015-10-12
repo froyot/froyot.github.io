@@ -121,8 +121,8 @@ markdown: redcarpet
 safe: false
 highlighter: pygments
 title: Allon's Blog
-description: 愚昧之人不可交，奸诈之人不可识，踏实之人可深处
-theme: midnight
+description: '贵有自知'
+theme: kunka
 disqusname: allon
 
 # theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
