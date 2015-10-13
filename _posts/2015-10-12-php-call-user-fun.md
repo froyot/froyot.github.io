@@ -4,8 +4,8 @@ title: PHP call_user_fun 不同版本区别
 category: 技术
 comments: true
 ---
-## PHP call_user_fun 在5.3 以及5.4+的区别
-PHP中call_user_fun可以调用用户回调函数。但是由于PHP本身的版本,
+## PHP call\_user\_fun 在5.3 以及5.4+的区别
+PHP中call\_user\_fun可以调用用户回调函数。但是由于PHP本身的版本,
 这个函数在不同的版本上表现还是有区别的，而且这个区别是致命的，
 5.4版本下的代码在5.3的版本上直接报错。
 
@@ -93,7 +93,7 @@ $this->afterGetData();
 一个stdClass对象。
 
 所以，一直不知道如何实现这个功能：
-在php5.3中的call_user_fun中调用当前对象的一个非静态函数。就是代码中如何
+在php5.3中的call\_user\_fun中调用当前对象的一个非静态函数。就是代码中如何
 实现调用client对象的afterGetData方式。
 
 
