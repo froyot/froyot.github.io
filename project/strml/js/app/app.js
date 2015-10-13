@@ -27,13 +27,21 @@ define(function(require, exports, module) {
 
   }
 
+  function setScorllor()
+  {
+    setTimeout(function(){
+      $('pre').animate({ scrollTop: $(this).scrollHeight() }, "slow")
+    },500);
+
+  }
+
   //向控件写字符串
   function writeTo(element, str, callFun)
   {
     styleClient.typed({
             strings: [str],
             showCursor: false,
-            contentType: 'text',
+            contentType: 'text'
     });
     var handleStr = handleText(str);
     element.typed({
@@ -41,7 +49,6 @@ define(function(require, exports, module) {
             showCursor: false,
             contentType: 'html',
             callback:function(){
-                element.scrollTop(element.scrollHeight());
                 if( undefined != callFun )
                 {
                   callFun();
@@ -53,6 +60,7 @@ define(function(require, exports, module) {
   //开始
   function start() {
       importStyleFile(0);
+      setScorllor();
   }
 
   //检测窗口是否在最上层
