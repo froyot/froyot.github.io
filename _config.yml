@@ -61,7 +61,7 @@ nav:
   - text: 联系我
     url: navigations/contact.html
   - text: Project
-    url: navigations/project.html
+    url: navigations/projects.html
   - text: 友情链接
     url: navigations/links.html
 
