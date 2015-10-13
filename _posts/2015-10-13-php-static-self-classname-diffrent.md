@@ -1,3 +1,9 @@
+---
+layout: post
+title: PHP static self classname 区别
+category: 技术
+comments: true
+---
 ## PHP static, self ,类名调用的区别
 
 PHP中调用静态变量或者静态调用方法在不同的场景中可以使用
