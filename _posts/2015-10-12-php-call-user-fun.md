@@ -10,7 +10,9 @@ PHP中call_user_fun可以调用用户回调函数。但是由于PHP本身的版�
 5.4版本下的代码在5.3的版本上直接报错。
 
 先看看一段5.4下正常的代码
+
 ```php
+
 <?php
 
 class Api{
@@ -74,12 +76,15 @@ $client->getData();
 
 ?>
 ```
+
 这段代码在5.4是完全没问题的，但是在5.3的版本上居然报错，提示错误:
 Using $this when not in object context,提示错误代码行
 
 ```php
+
 $this->clientName = $api->name;
 $this->afterGetData();
+
 ```
 在这里，在回调函数中调用一些当前对象的函数以及使用当前对象的其他属性
 是完全有可能的。但是！但是！5.3中不可以。
