@@ -8,6 +8,8 @@ define(function(require, exports, module) {
   var str1 = '';
   var str2 = '';
 
+  var isEnd = false;
+
   //导入css文件
   function importStyleFile(index)
   {
@@ -23,6 +25,8 @@ define(function(require, exports, module) {
     writeTo(element, str,function(){
       if(index < 3)
         importStyleFile(++index);
+      else
+        isEnd = true;
     });
 
   }
@@ -30,7 +34,9 @@ define(function(require, exports, module) {
   function setScorllor()
   {
     setTimeout(function(){
-      $('pre').animate({ scrollTop: $(this).scrollHeight }, "slow")
+      $('pre').animate({ scrollTop: $(this).scrollHeight }, "slow");
+      if( !isEnd )
+          setScorllor();
     },500);
 
   }
