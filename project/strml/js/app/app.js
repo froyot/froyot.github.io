@@ -9,11 +9,13 @@ define(function(require, exports, module) {
   var str2 = '';
 
   var isEnd = false;
+  var currentIndex = 0;
 
   //导入css文件
   function importStyleFile(index)
   {
     $.get('./js/css/main'+index+'.css',function(data){
+      currentIndex = index;
       handleData( index, data, $('#work-text'+index));
     });
 
@@ -23,10 +25,14 @@ define(function(require, exports, module) {
   {
 
     writeTo(element, str,function(){
-      if(index < 3)
-        importStyleFile(++index);
-      else
+      if(index >= 2)
+      {
         isEnd = true;
+      }
+      else
+      {
+        importStyleFile(++index);
+      }
     });
 
   }
@@ -34,7 +40,12 @@ define(function(require, exports, module) {
   function setScorllor()
   {
     setTimeout(function(){
-      $('pre').animate({ scrollTop: $(this)[0].scrollHeight }, "slow");
+      $('pre').each(function(index,item){
+          if($(item).attr('id') == 'work-text'+currentIndex)
+          {
+            $(item).animate({scrollTop: item.scrollHeight}, 300);
+          }
+      });
       if( !isEnd )
           setScorllor();
     },500);
