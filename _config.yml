@@ -60,6 +60,8 @@ nav:
     url: navigations/archives.html
   - text: 联系我
     url: navigations/contact.html
+  - text: Project
+    url: navigations/project.html
   - text: 友情链接
     url: navigations/links.html
 
@@ -71,15 +73,7 @@ author:
     simpleIntro: 我是 Allon
     detailIntro:
       "<p>2012年开始接触web开发，陆陆续续接触PHP, python, Android的开发, 目前从事PHP开发工作</p>
-      <p>PHP开发多是app reset api 的开发, python 则作为一个工具, 多用于数据抓取。Android的开发主要是在你业余时间消遣而已。</p>
-      <p>
-        <div>不入流的Android app</div>
-        <ul>
-          <li><a href='http://shouji.baidu.com/software/item?docid=8001968&from=as' target='_blank'>精小天气</a></li>
-          <li><a href='http://shouji.baidu.com/software/item?docid=7798966&from=as' target='_blank'>淘淘</a></li>
-        </ul>
-        <div>web 相关</div>
-      </p>"
+      <p>PHP开发多是app reset api 的开发, python 则作为一个工具, 多用于数据抓取。Android的开发主要是在你业余时间消遣而已。</p>"
 
 #Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
 follow:
