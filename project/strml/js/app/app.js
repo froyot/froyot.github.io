@@ -34,7 +34,7 @@ define(function(require, exports, module) {
   function setScorllor()
   {
     setTimeout(function(){
-      $('pre').animate({ scrollTop: $(this).scrollHeight }, "slow");
+      $('pre').animate({ scrollTop: $(this)[0].scrollHeight }, "slow");
       if( !isEnd )
           setScorllor();
     },500);
