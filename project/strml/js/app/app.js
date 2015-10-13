@@ -41,9 +41,11 @@ define(function(require, exports, module) {
             showCursor: false,
             contentType: 'html',
             callback:function(){
+                element.scrollTop(element.scrollHeight());
                 if( undefined != callFun )
-                  element.scrollTop(element.scrollHeight());
+                {
                   callFun();
+                }
             }
     });
   }
