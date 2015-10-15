@@ -1,3 +1,9 @@
+---
+layout: post
+title: Yii2 主题记录
+category: 技术
+comments: true
+---
 ## Yii2 主题添加记录
 Yii2本身支持多模块，多主题开发。因此对开发中遇到的多主题问题，以及自定
 义不同模块主题需要的注意事项进行记录
