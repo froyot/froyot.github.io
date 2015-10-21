@@ -21,7 +21,9 @@ removed by your friend.
 
 以上是leetcode中的一道编程题目。实在惭愧，弄了半天没明白，最后发现题目关键是4
 个的时候第一个人必定无法赢。一下是解题:
+
 ```php
+
 <?php
 /**
  * nimGame,给定石头数目，每次只能从中拿1到3个石头。
@@ -42,4 +44,5 @@ function nimGame( $number )
         return 2;
 }
 ?>
+
 ```
