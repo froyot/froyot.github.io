@@ -3,6 +3,7 @@ layout: post
 title: API Cloud PHP SDK个人版
 category: 技术
 comments: true
+description:{{ post.excerpt }}
 ---
 
 

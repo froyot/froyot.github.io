@@ -3,6 +3,7 @@ layout: post
 title: nimGame
 category: 题趣
 comments: true
+description:{{ post.excerpt }}
 ---
 
 ## nimGame
