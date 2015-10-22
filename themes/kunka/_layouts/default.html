@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="generator" content="Jekyll" />
         <meta name="author" content="{{ site.author.name }}" />
-        <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+        <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ post.excerpt }}{% else %}{{ site.description }}{% endif %}" />
         <meta name="keywords" content="{{ page.keywords | join: ',' }}" />
         <!-- atom -->
         <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.url }}{{ site.feed }}" />
