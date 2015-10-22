@@ -3,7 +3,7 @@ layout: post
 title: API Cloud PHP SDK个人版
 category: 技术
 comments: true
-description:API Cloud PHP SDK,使用apicloud的数据库作为自己项目的存储环境.
+description: "API Cloud PHP SDK,使用apicloud的数据库作为自己项目的存储环境."
 ---
 
 

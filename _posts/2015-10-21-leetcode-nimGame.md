@@ -3,7 +3,7 @@ layout: post
 title: nimGame
 category: 题趣
 comments: true
-description:Nim Game,remove the stones.
+description: "Nim Game,remove the stones."
 ---
 
 ## nimGame
