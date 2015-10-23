@@ -73,6 +73,7 @@ author:
     simpleIntro: 我是 Allon
     resumeLink: https://github.com/froyot/froyot.github.io/tree/master/personal/resume.md
     resumePdfLink: https://github.com/froyot/froyot.github.io/tree/master/personal/resume.pdf
+    workproject: https://github.com/froyot/froyot.github.io/tree/master/personal/workproject.md
     detailIntro:
       "<p>2012年开始接触web开发，陆陆续续接触PHP, python, Android的开发, 目前从事PHP开发工作</p>
       <p>PHP开发多是app reset api 的开发, python 则作为一个工具, 多用于数据抓取。Android的开发主要是在你业余时间消遣而已。</p>"
