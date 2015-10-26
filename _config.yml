@@ -124,7 +124,7 @@ baseurl: http://froyot.github.io
 markdown: redcarpet
 safe: false
 highlighter: pygments
-title: 立定脚跟s
+title: 立定脚跟
 description: '志不可不高，志不高，则同流合污，无足有为矣；心不可太大，心太大，则舍近图远，难期有成矣'
 theme: kunka
 disqusname: allon
