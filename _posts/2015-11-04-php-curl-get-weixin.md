@@ -3,6 +3,7 @@ layout: post
 title: PHP 通过搜狗搜索 抓取微信公众号数据
 category: 技术
 comments: true
+description: "PHP,抓取微信,微信公众号."
 ---
 
 ## PHP 通过搜狗搜索 抓取微信公众号数据

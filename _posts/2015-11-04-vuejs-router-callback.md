@@ -3,6 +3,7 @@ layout: post
 title: Vue.js router 切换后执行某个操作
 category: 技术
 comments: true
+description: "Vue.js, router,javascript, vue-router change callback."
 ---
 
 
