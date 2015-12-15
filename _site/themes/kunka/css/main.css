@@ -731,3 +731,14 @@ a         { color: #91736b; text-decoration: none; }
     height: 80px;
     margin: 0 auto;
 }
+
+
+.icon-zhihu:before {
+  content: "知";
+
+}
+
+.icon-jianshu:before {
+  content: "简";
+
+}

@@ -12,7 +12,6 @@ paginate:     8
 # Handling Reading
 safe:         false
 include:      [".htaccess"]
-exclude:      []
 keep_files:   [".git", ".svn"]
 encoding:     "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
@@ -46,6 +45,7 @@ timezone:      null
 title: Allon's Blog
 description: "Allon's Blog, record about web and app developement."
 keywords: "PHP, Android, web app, web developement, python"
+##http://froyot.github.io/
 url: http://froyot.github.io/
 feed: /atom.xml
 favicon: http://jekyllrb.com/favicon.png
@@ -120,6 +120,7 @@ disqus:
 #################################### global configure #######################################
 
 username: froyot
+##http://froyot.github.io
 baseurl: http://froyot.github.io
 markdown: redcarpet
 safe: false
@@ -130,5 +131,9 @@ theme: kunka
 disqusname: allon
 keywords: 'Allon, froyot, PHP record, Android app, web 开发, javascript 学习, Yii2 PHP框架'
 
-# theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
+# theme can be: hack, le
+# ap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
 # those themes are all come from GitHub Pages Themes
+#
+gems: [jekyll-paginate]
+highlighter: rouge

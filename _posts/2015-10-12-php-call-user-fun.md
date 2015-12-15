@@ -4,6 +4,7 @@ title: PHP call_user_fun 不同版本区别
 category: 技术
 comments: true
 ---
+
 ## PHP call\_user\_fun 在5.3 以及5.4+的区别
 PHP中call\_user\_fun可以调用用户回调函数。但是由于PHP本身的版本,
 这个函数在不同的版本上表现还是有区别的，而且这个区别是致命的，
