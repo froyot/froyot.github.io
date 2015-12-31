@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Yii2 主题记录
-category: 技术
+category: PHP
 comments: true
 ---
 

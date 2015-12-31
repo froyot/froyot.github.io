@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Yii2 中使用registerJsFile引入asset发布的js文件
-category: 技术
+category: PHP
 comments: true
 description: "Yii2 use registerJsFile include file in asset director"
 ---

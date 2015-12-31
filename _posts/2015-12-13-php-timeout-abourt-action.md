@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP 浏览器关闭 和timeout之后，php程序还会执行吗？
-category: 技术
+category: PHP
 comments: true
 description: "PHP 浏览器关闭 和timeout之后，php程序还会执行吗？"
 ---

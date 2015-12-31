@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Yii2 CMS 系统 DanDan CMS开发基本完成
-category: 技术
+category: PHP
 comments: true
 description: "Yii2 CMS DanDan CMS Developer Finished basic"
 ---

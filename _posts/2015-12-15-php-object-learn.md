@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP面向对象深入--构造函数中调用成员函数，到底调用的是哪个类的函数
-category: 技术
+category: PHP
 comments: true
 description: "PHP中，构造函数中调用成员函数，到底调用的是哪个类的函数?"
 ---

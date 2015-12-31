@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Yii2 PHP 手册阅读记录
-category: 技术
+category: PHP
 comments: true
 description: "Yii2 PHP 手册阅读记录"
 ---

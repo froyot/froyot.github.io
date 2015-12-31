@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP static self classname 区别
-category: 技术
+category: PHP
 comments: true
 ---
 ## PHP static, self ,类名调用的区别

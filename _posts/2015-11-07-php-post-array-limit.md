@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PHP POST 数组限制
-category: 技术
+category: PHP
 comments: true
 description: "PHP, POST, Array limit, max_input_var"
 ---
