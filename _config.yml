@@ -124,7 +124,7 @@ username: froyot
 baseurl: http://froyot.github.io
 markdown: redcarpet
 redcarpet:
-extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+    extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
 safe: false
 highlighter: pygments
 title: 立定脚跟
