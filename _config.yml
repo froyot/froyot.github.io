@@ -46,7 +46,7 @@ title: Allon's Blog
 description: "Allon's Blog, record about web and app developement."
 keywords: "PHP, Android, web app, web developement, python"
 ##http://froyot.github.io/
-url: http://froyot.github.io/
+url:
 feed: /atom.xml
 favicon: http://jekyllrb.com/favicon.png
 
@@ -121,7 +121,7 @@ disqus:
 
 username: froyot
 ##http://froyot.github.io
-baseurl: http://froyot.github.io
+baseurl:
 markdown: redcarpet
 redcarpet:
     extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
