@@ -11,6 +11,7 @@ gitbook 是github中比较流行用来记录分享的工具，也是写工作文
 因此打算折腾一番。
 
 [GitBook Github地址](https://github.com/GitbookIO/gitbook)给出的安装使用步骤:
+
 ```
 npm install gitbook-cli -g
 
@@ -21,6 +22,7 @@ gitbook build
 gitbook serve
 
 ```
+
 
 如果没有墙，上面的步骤都没错！！！
 
