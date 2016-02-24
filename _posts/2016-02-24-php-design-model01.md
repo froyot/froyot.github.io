@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: php 设计模式 一
