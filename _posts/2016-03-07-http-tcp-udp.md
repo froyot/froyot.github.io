@@ -33,7 +33,7 @@ Request line 指明请求方式，请求地址，以及http协议版本
 
 
 *   第二部分叫Request header
-```
+
 >   Accept: text/html
     指明浏览器端可以接受的媒体类型,Accept: */*  代表浏览器可以处理所有类型
 
@@ -45,16 +45,20 @@ Request line 指明请求方式，请求地址，以及http协议版本
 
 >   Content-Type: application/json
     作用： 浏览器申明请求数据的格式。
+
 >   Accept-Encoding: gzip
     浏览器申明自己接收的编码方法，通常指定压缩方法，是否支持压缩，支持什么压缩
+
 >   User-Agent
     告诉HTTP服务器， 客户端使用的操作系统和浏览器的名称和版本
+
 >   Connection: keep-alive
     当一个网页打开完成后，客户端和服务器之间用于传输HTTP数据的TCP连接不会关闭,
     如果close,则请求之后立即关闭
+
 >   Content-Length:888
     作用：发送给HTTP服务器数据的长度。
 
 >   Host（发送请求时，该报头域是必需的）
     请求报头域主要用于指定被请求资源的Internet主机和端口号，它通常从HTTP URL中提取出来的
-```
+
