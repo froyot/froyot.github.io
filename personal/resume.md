@@ -9,7 +9,7 @@
 
 毕业院校及专业: 长春工业大学(2015),信号与信息处理
 
-E-mail: xianlong300@sina.com,          手机: 18565727169
+手机: 18565727169       		 &nbsp;&nbsp;&nbsp; E-mail: xianlong300@sina.com    
 
 ------------------
 
@@ -54,13 +54,14 @@ E-mail: xianlong300@sina.com,          手机: 18565727169
 
 ### 其他
 ---------------
-**github**: [froyot.github.com](http://froyot.github.com)
+**github**: [http://froyot.github.com](http://froyot.github.com)
 
-**Blog**: [froyot.github.io](http://froyot.github.io)
+**Blog**: [http://froyot.github.io](http://froyot.github.io)
 
 **个人网站**:[http://www.aiaiaini.com/](http://www.aiaiaini.com/)
 
-期望薪资:15k+
+----------------
+
 
 
 ### 在校所获奖励
@@ -82,18 +83,6 @@ E-mail: xianlong300@sina.com,          手机: 18565727169
 *  2011 年 1 月中国移动百万青年创业大赛
 *  2010 年 11 月全国数学竞赛
 *  2010 年 5 月吉林省数学建模大赛
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
