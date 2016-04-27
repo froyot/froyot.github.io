@@ -11,7 +11,7 @@ description: "http,tcp,udp协议"
 *   tcp数据传输之前需要与接收方建立连接，进行三次握手之后才可以传输数据
 *   tcp传输是可靠的,因为数据传输之前，发送接收方需要建立连接，进行数据传输同步，应用于大量数据传输的场景，传输速度慢
 *   tcp连接是有状态的，长连接，除非网络中断或主动断开，连接才会中断
-*   tcp,客户端向服务器发送syn(syn=j)进入SYN_SEND状态,服务器回复ACK(ack=j+1),同时发送SYN(syn=k)进入SYN_RECV状态,客户端发送ACK(ack=k+1),进入ESTABLISTION状态
+*   tcp,客户端向服务器发送syn(syn=j)进入SYN\_SEND状态,服务器回复ACK(ack=j+1),同时发送SYN(syn=k)进入SYN\_RECV状态,客户端发送ACK(ack=k+1),进入ESTABLISTION状态
 
 ## udp协议
 *   udp也是属于传输层网络协议
