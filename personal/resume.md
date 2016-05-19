@@ -63,6 +63,8 @@
 
 **个人网站** :[http://www.aiaiaini.com/](http://www.aiaiaini.com/)
 
+**项目列表**:[https://github.com/froyot/froyot.github.io/blob/master/personal/workproject.md](https://github.com/froyot/froyot.github.io/blob/master/personal/workproject.md)
+
 ----------------
 
 
