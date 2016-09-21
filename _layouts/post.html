@@ -7,7 +7,7 @@ comments: true
 {% else %}
     {% if site.theme == 'minima' %}
         {% include layout_minima_post.html %}
+    {% else %}
+        {{content}}
     {% endif %}
-
-    {{content}}
 {% endif %}
