@@ -5,8 +5,8 @@
 # Where things are
 source:       .
 destination:  ./_site
-plugins_dir:      ./_plugins
-layouts_dir:      ./_layouts
+plugins:      ./_plugins
+layouts:      ./_layouts
 paginate:     8
 
 # Handling Reading
