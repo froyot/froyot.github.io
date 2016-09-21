@@ -5,5 +5,8 @@ title: 文章目录
 {% if site.theme == 'kunka' %}
     {% include {{site.theme}}_index.html %}
 {% else %}
+    {% if site.theme == 'minima' %}
+        {% include {{site.theme}}_index.html %}
+    {% endif %}
     {% include default_index.html %}
 {% endif %}
