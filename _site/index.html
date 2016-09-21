@@ -115,145 +115,159 @@
     
 
     <div class="article">
-        <h3 class="title"><a href="/javascript/2016/01/06/js-params-global-local.html" title="js 变量作用域">js 变量作用域</a></h3>
+        <h3 class="title"><a href="/php/2016/08/18/PHP-Dependency-Injection.html" title="PHP 依赖注入">PHP 依赖注入</a></h3>
         <article class="rexp">
-            <p><h2 id="js-变量作用域">js 变量作用域</h2>
+            <p><h2 id="php-依赖注入">PHP 依赖注入</h2>
 
-<p>js的变量作用域，根据不同的定义位置分为全局变量以及局部变量。同事，
-任何没有用var定义的变量都是全局变量。如果没有局部变量，则寻找全局变量。
-但是需要注意一点，函数域优于全局域，当变量调用语句在函数域内，同时函数域中也存在
-局部变量，则使用的是局部变量，不管调用时，变量是否定义。</p>
+<p>考虑一个问题，如果一个web应用需要一个日志服务，日志服务可以是文本，数据库或者邮件的形式，
+而且日志需要将获取的信息格式化指定的形式。应用可以根据需要，任意切换日志服务是文本还是数
+据库还是邮件。如果以传统的方式，日志记录的代码类似下面的形式:</p>
 </p>
         </article>
-        <a href="/javascript/2016/01/06/js-params-global-local.html" class="more"><i class="icon-link"></i></a>
+        <a href="/php/2016/08/18/PHP-Dependency-Injection.html" class="more"><i class="icon-link"></i></a>
         <div class="info">
             <span class="info-title"><i class="icon-calendar"></i> Published: </span>
-            <span class="info-date">06 Jan 2016</span>
-             <span class="info-title"><i class="icon-folder-open"></i> Category: </span>
-            <span class="info-link"><a href="/navigations/categories.html#Javascript-ref" >Javascript</a></span>
-        </div>
-    </div>
-
-    <div class="article">
-        <h3 class="title"><a href="/php/2016/01/04/PHP-value-compaire.html" title="PHP 松散比较的几个值">PHP 松散比较的几个值</a></h3>
-        <article class="rexp">
-            <p><h2 id="php-松散比较的几个值">PHP 松散比较的几个值</h2>
-
-<p>PHP中几个比较容易混乱的值:false,&#39;0&#39;,0,&#39;&#39;,null,array().这几个值在if判断中都是false,那么他们之间相互进行&#39;==&#39;比较呢？</p>
-</p>
-        </article>
-        <a href="/php/2016/01/04/PHP-value-compaire.html" class="more"><i class="icon-link"></i></a>
-        <div class="info">
-            <span class="info-title"><i class="icon-calendar"></i> Published: </span>
-            <span class="info-date">04 Jan 2016</span>
+            <span class="info-date">18 Aug 2016</span>
              <span class="info-title"><i class="icon-folder-open"></i> Category: </span>
             <span class="info-link"><a href="/navigations/categories.html#PHP-ref" >PHP</a></span>
         </div>
     </div>
 
     <div class="article">
-        <h3 class="title"><a href="/php/2016/01/01/PHP-array-add-and-arraymerge.html" title="PHP 数组相加与array_merge的区别">PHP 数组相加与array_merge的区别</a></h3>
+        <h3 class="title"><a href="/php/2016/05/17/php-gc-learn.html" title="PHP GC学习">PHP GC学习</a></h3>
         <article class="rexp">
-            <p><h2 id="php-数组相加与array_merge的区别">PHP 数组相加与array_merge的区别</h2>
+            <p><h2 id="php-gc学习">PHP GC学习</h2>
 
-<p>PHP合并数组可以使用&quot;+&quot;号或者array_merge函数。那么这两个不同的方式有什么区别呢？</p>
+<p>在5.2及更早版本的PHP中，没有专门的垃圾回收器GC（Garbage Collection），引擎在判断
+一个变量空间是否能够被释放的时候是依据这个变量的zval的refcount的值，如果refcount
+为0，那么变量的空间可以被释放，否则就不释放。思考一个问题:</p>
 </p>
         </article>
-        <a href="/php/2016/01/01/PHP-array-add-and-arraymerge.html" class="more"><i class="icon-link"></i></a>
+        <a href="/php/2016/05/17/php-gc-learn.html" class="more"><i class="icon-link"></i></a>
         <div class="info">
             <span class="info-title"><i class="icon-calendar"></i> Published: </span>
-            <span class="info-date">01 Jan 2016</span>
+            <span class="info-date">17 May 2016</span>
              <span class="info-title"><i class="icon-folder-open"></i> Category: </span>
             <span class="info-link"><a href="/navigations/categories.html#PHP-ref" >PHP</a></span>
         </div>
     </div>
 
     <div class="article">
-        <h3 class="title"><a href="/php/2015/12/31/PHP-record-01.html" title="PHP 盲点扫描 01">PHP 盲点扫描 01</a></h3>
+        <h3 class="title"><a href="/php/2016/04/22/yii2-called-by-other.html" title="Yii 作为模块被调用">Yii 作为模块被调用</a></h3>
         <article class="rexp">
-            <p><h2 id="php-盲点扫描-01">PHP 盲点扫描 01</h2>
+            <p><h2 id="思考">思考</h2>
 
-<p>PHP语言由于其语法简单，没有数据类型，因此会有不少不易被发现的盲点，这些盲点一旦在
-应用中出现，非常具有隐蔽性，很难发现，因为很多都会让你觉得<strong>不科学</strong>。但是，当你
-仔细阅读PHP手册，还真是这样。</p>
+<p>Yii以及其他PHP框架，通常是通过一个入口文件把框架类库，引入进来。
+然后根据route找到指定的控制器执行业务逻辑。一般的框架都可以很容易的集成第三方类库。
+可是，如果说，多个项目之间需要相互调用，而且多个项目之间不是用相同的框架写的，但是是同一个语言。
+如果不是相同语言，就只好是各个框架之间开放不同的接口，通过rest或者soap的形式进行接口调用。
+虽然把各个模块封装成接口，可以很大的降低项目之间的耦合。但是接口同时也包含代码调用的形式。
+项目中用到了workman作为消息发送，业务逻辑采用yii处理。那么问题来了，workman如何调用yii</p>
 </p>
         </article>
-        <a href="/php/2015/12/31/PHP-record-01.html" class="more"><i class="icon-link"></i></a>
+        <a href="/php/2016/04/22/yii2-called-by-other.html" class="more"><i class="icon-link"></i></a>
         <div class="info">
             <span class="info-title"><i class="icon-calendar"></i> Published: </span>
-            <span class="info-date">31 Dec 2015</span>
+            <span class="info-date">22 Apr 2016</span>
              <span class="info-title"><i class="icon-folder-open"></i> Category: </span>
             <span class="info-link"><a href="/navigations/categories.html#PHP-ref" >PHP</a></span>
         </div>
     </div>
 
     <div class="article">
-        <h3 class="title"><a href="/php/2015/12/18/yii2-guid-doc-read.html" title="Yii2 PHP 手册阅读记录">Yii2 PHP 手册阅读记录</a></h3>
+        <h3 class="title"><a href="/%E6%8A%80%E6%9C%AF/2016/03/09/ubuntu-14.04-mysql-Atlas.html" title="ubuntu 14.04 mysql Atlas 读写分离 环境配置安装">ubuntu 14.04 mysql Atlas 读写分离 环境配置安装</a></h3>
         <article class="rexp">
-            <p><h2 id="yii2-php-手册阅读记录">Yii2 PHP 手册阅读记录</h2>
+            <p><h2 id="atlas">Atlas</h2>
+
+<p>Atlas 是Qihoo 360, Web平台部基础架构团队在mysql_proxy基础上开发维护开发的一款mysql 中间件，360内部使用Atlas运行的mysql业务，每天承载的读写请求数达几十亿条。更多mysql 中间件可以参考
+<a href="http://www.guokr.com/blog/475765/">http://www.guokr.com/blog/475765/</a>.</p>
 </p>
         </article>
-        <a href="/php/2015/12/18/yii2-guid-doc-read.html" class="more"><i class="icon-link"></i></a>
+        <a href="/%E6%8A%80%E6%9C%AF/2016/03/09/ubuntu-14.04-mysql-Atlas.html" class="more"><i class="icon-link"></i></a>
         <div class="info">
             <span class="info-title"><i class="icon-calendar"></i> Published: </span>
-            <span class="info-date">18 Dec 2015</span>
-             <span class="info-title"><i class="icon-folder-open"></i> Category: </span>
-            <span class="info-link"><a href="/navigations/categories.html#PHP-ref" >PHP</a></span>
-        </div>
-    </div>
-
-    <div class="article">
-        <h3 class="title"><a href="/%E6%8A%80%E6%9C%AF/2015/12/17/android-fragmenttabhost.html" title="Android FragmentTabhost 截断tab点击事件">Android FragmentTabhost 截断tab点击事件</a></h3>
-        <article class="rexp">
-            <p><h2 id="android-fragmenttabhost-可以很方便的实现tabhost布局，但是如果一个场景">Android FragmentTabhost 可以很方便的实现tabhost布局，但是如果一个场景:</h2>
-
-<p>某个tab需要验证用户登录才能够显示，如果用户没登录，跳转到登陆activity。这个时候
-就需要截断tab的点击事件。</p>
-</p>
-        </article>
-        <a href="/%E6%8A%80%E6%9C%AF/2015/12/17/android-fragmenttabhost.html" class="more"><i class="icon-link"></i></a>
-        <div class="info">
-            <span class="info-title"><i class="icon-calendar"></i> Published: </span>
-            <span class="info-date">17 Dec 2015</span>
+            <span class="info-date">09 Mar 2016</span>
              <span class="info-title"><i class="icon-folder-open"></i> Category: </span>
             <span class="info-link"><a href="/navigations/categories.html#技术-ref" >技术</a></span>
         </div>
     </div>
 
     <div class="article">
-        <h3 class="title"><a href="/php/2015/12/15/php-object-learn.html" title="PHP面向对象深入--构造函数中调用成员函数，到底调用的是哪个类的函数">PHP面向对象深入--构造函数中调用成员函数，到底调用的是哪个类的函数</a></h3>
+        <h3 class="title"><a href="/%E5%9F%BA%E7%A1%80/2016/03/07/http-tcp-udp.html" title="http,tcp,udp协议">http,tcp,udp协议</a></h3>
         <article class="rexp">
-            <p><h2 id="php中，构造函数中调用成员函数，到底调用的是哪个类的函数">PHP中，构造函数中调用成员函数，到底调用的是哪个类的函数?</h2>
+            <p><h2 id="1-tcp协议">1. tcp协议</h2>
 
-<p>PHP中，静态方法中不能使用$this，即用双冒号::调用的函数。这里，构造函数要除外，那么，
-构造函数中的$this到底指向谁，$this-&gt;display函数又会执行那个类里面的函数？</p>
+<ul>
+<li>  tcp协议是面向连接的传输层网络协议</li>
+<li>  tcp数据传输之前需要与接收方建立连接，进行三次握手之后才可以传输数据</li>
+<li>  tcp传输是可靠的,因为数据传输之前，发送接收方需要建立连接，进行数据传输同步，应用于大量数据传输的场景，传输速度慢</li>
+<li>  tcp连接是有状态的，长连接，除非网络中断或主动断开，连接才会中断</li>
+<li>  tcp,客户端向服务器发送syn(syn=j)进入SYN_SEND状态,服务器回复ACK(ack=j+1),同时发送SYN(syn=k)进入SYN_RECV状态,客户端发送ACK(ack=k+1),进入ESTABLISTION状态</li>
+</ul>
 </p>
         </article>
-        <a href="/php/2015/12/15/php-object-learn.html" class="more"><i class="icon-link"></i></a>
+        <a href="/%E5%9F%BA%E7%A1%80/2016/03/07/http-tcp-udp.html" class="more"><i class="icon-link"></i></a>
         <div class="info">
             <span class="info-title"><i class="icon-calendar"></i> Published: </span>
-            <span class="info-date">15 Dec 2015</span>
+            <span class="info-date">07 Mar 2016</span>
              <span class="info-title"><i class="icon-folder-open"></i> Category: </span>
-            <span class="info-link"><a href="/navigations/categories.html#PHP-ref" >PHP</a></span>
+            <span class="info-link"><a href="/navigations/categories.html#基础-ref" >基础</a></span>
         </div>
     </div>
 
     <div class="article">
-        <h3 class="title"><a href="/%E6%8A%80%E6%9C%AF/2015/12/14/nodejs-request-async-continue.html" title="Node.JS 回调函数在请求已经结束之后是否会执行？">Node.JS 回调函数在请求已经结束之后是否会执行？</a></h3>
+        <h3 class="title"><a href="/%E5%9F%BA%E7%A1%80/2016/02/24/php-design-model01.html" title="php 设计模式 一">php 设计模式 一</a></h3>
         <article class="rexp">
-            <p><h2 id="node-js-回调函数在请求已经结束之后是否会执行？">Node.JS 回调函数在请求已经结束之后是否会执行？</h2>
+            <p><h2 id="1-单例模式">1. 单例模式</h2>
 
-<p>做PHP，程序都是顺序执行的，所谓回调函数，其本身也是顺序执行的。但是Node.js 本身是
-回调函数是异步执行的。PHP中，如果请求结束，那么在改请求所执行的操作都结束了。那么
-Node.js里呢。</p>
+<p>程序运行期间只有一个实例对象。单例模式类似于全局变量，在整个应用运行期间，共同操
+作通一个对象。</p>
 </p>
         </article>
-        <a href="/%E6%8A%80%E6%9C%AF/2015/12/14/nodejs-request-async-continue.html" class="more"><i class="icon-link"></i></a>
+        <a href="/%E5%9F%BA%E7%A1%80/2016/02/24/php-design-model01.html" class="more"><i class="icon-link"></i></a>
         <div class="info">
             <span class="info-title"><i class="icon-calendar"></i> Published: </span>
-            <span class="info-date">14 Dec 2015</span>
+            <span class="info-date">24 Feb 2016</span>
              <span class="info-title"><i class="icon-folder-open"></i> Category: </span>
-            <span class="info-link"><a href="/navigations/categories.html#技术-ref" >技术</a></span>
+            <span class="info-link"><a href="/navigations/categories.html#基础-ref" >基础</a></span>
+        </div>
+    </div>
+
+    <div class="article">
+        <h3 class="title"><a href="/%E5%9F%BA%E7%A1%80/2016/02/19/zhengze.html" title="正则贪婪与非贪婪">正则贪婪与非贪婪</a></h3>
+        <article class="rexp">
+            <p><h2 id="正则匹配分为贪婪以及非贪婪两种模式">正则匹配分为贪婪以及非贪婪两种模式</h2>
+
+<p>贪婪与非贪婪模式影响的是被量词修饰的子表达式的匹配行为，贪婪模式在整个表达式匹配
+成功的前提下，尽可能多的匹配，而非贪婪模式在整个表达式匹配成功的前提下，尽可能少
+的匹配。</p>
+</p>
+        </article>
+        <a href="/%E5%9F%BA%E7%A1%80/2016/02/19/zhengze.html" class="more"><i class="icon-link"></i></a>
+        <div class="info">
+            <span class="info-title"><i class="icon-calendar"></i> Published: </span>
+            <span class="info-date">19 Feb 2016</span>
+             <span class="info-title"><i class="icon-folder-open"></i> Category: </span>
+            <span class="info-link"><a href="/navigations/categories.html#基础-ref" >基础</a></span>
+        </div>
+    </div>
+
+    <div class="article">
+        <h3 class="title"><a href="/script/2016/02/03/appium-alipay-xiuyixiu.html" title="支付宝自动咻一咻python脚本">支付宝自动咻一咻python脚本</a></h3>
+        <article class="rexp">
+            <p><h2 id="支付宝自动咻一咻python脚本">支付宝自动咻一咻python脚本</h2>
+
+<p>一道过年，各种红包。支付宝的红包虽说今年换了玩法，不过还是点，点，点。这种最适合的就是采用自动化测试那一套。
+因此，空闲时看了看android的自动化测试者方面的东西，采用Appium python-client，写了一个测试脚本，对支付宝进行
+测试，实现咻一咻自动化。</p>
+</p>
+        </article>
+        <a href="/script/2016/02/03/appium-alipay-xiuyixiu.html" class="more"><i class="icon-link"></i></a>
+        <div class="info">
+            <span class="info-title"><i class="icon-calendar"></i> Published: </span>
+            <span class="info-date">03 Feb 2016</span>
+             <span class="info-title"><i class="icon-folder-open"></i> Category: </span>
+            <span class="info-link"><a href="/navigations/categories.html#script-ref" >script</a></span>
         </div>
     </div>
 
@@ -272,6 +286,14 @@ Node.js里呢。</p>
             
                 
                     <li><a href="/page3/">3</a></li>
+                
+            
+                
+                    <li><a href="/page4/">4</a></li>
+                
+            
+                
+                    <li><a href="/page5/">5</a></li>
                 
             
         </ul>
@@ -299,17 +321,17 @@ Node.js里呢。</p>
                         <h4 class="title">Recent Posts</h4>
                         <ul class="list">
                             
-                                <li><a href="/javascript/2016/01/06/js-params-global-local.html" title="js 变量作用域" rel="bookmark">js 变量作用域</a></li>
+                                <li><a href="/php/2016/08/18/PHP-Dependency-Injection.html" title="PHP 依赖注入" rel="bookmark">PHP 依赖注入</a></li>
                             
-                                <li><a href="/php/2016/01/04/PHP-value-compaire.html" title="PHP 松散比较的几个值" rel="bookmark">PHP 松散比较的几个值</a></li>
+                                <li><a href="/php/2016/05/17/php-gc-learn.html" title="PHP GC学习" rel="bookmark">PHP GC学习</a></li>
                             
-                                <li><a href="/php/2016/01/01/PHP-array-add-and-arraymerge.html" title="PHP 数组相加与array_merge的区别" rel="bookmark">PHP 数组相加与array_merge的区别</a></li>
+                                <li><a href="/php/2016/04/22/yii2-called-by-other.html" title="Yii 作为模块被调用" rel="bookmark">Yii 作为模块被调用</a></li>
                             
-                                <li><a href="/php/2015/12/31/PHP-record-01.html" title="PHP 盲点扫描 01" rel="bookmark">PHP 盲点扫描 01</a></li>
+                                <li><a href="/%E6%8A%80%E6%9C%AF/2016/03/09/ubuntu-14.04-mysql-Atlas.html" title="ubuntu 14.04 mysql Atlas 读写分离 环境配置安装" rel="bookmark">ubuntu 14.04 mysql Atlas 读写分离 环境配置安装</a></li>
                             
-                                <li><a href="/php/2015/12/18/yii2-guid-doc-read.html" title="Yii2 PHP 手册阅读记录" rel="bookmark">Yii2 PHP 手册阅读记录</a></li>
+                                <li><a href="/%E5%9F%BA%E7%A1%80/2016/03/07/http-tcp-udp.html" title="http,tcp,udp协议" rel="bookmark">http,tcp,udp协议</a></li>
                             
-                                <li><a href="/%E6%8A%80%E6%9C%AF/2015/12/17/android-fragmenttabhost.html" title="Android FragmentTabhost 截断tab点击事件" rel="bookmark">Android FragmentTabhost 截断tab点击事件</a></li>
+                                <li><a href="/%E5%9F%BA%E7%A1%80/2016/02/24/php-design-model01.html" title="php 设计模式 一" rel="bookmark">php 设计模式 一</a></li>
                             
                         </ul>
                     </div>
