@@ -72,7 +72,7 @@ author:
     imageLink: http://7xkcoe.com1.z0.glb.clouddn.com/blog_CgQIzlSdfmWAMydRAAN7zIi3PoU29000.jpg
     simpleIntro: 我是 Allon
     resumeLink: https://github.com/froyot/froyot.github.io/tree/master/personal/resume.md
-    resumePdfLink: https://github.com/froyot/froyot.github.io/blob/master/personal/resume.pdf
+    resumePdfLink: https://github.com/froyot/froyot.github.io/tree/master/personal/resume.pdf
     workproject: https://github.com/froyot/froyot.github.io/tree/master/personal/workproject.md
     detailIntro:
       "<p>2012年开始接触web开发，陆陆续续接触PHP, python, Android的开发, 目前从事PHP开发工作</p>
@@ -127,8 +127,8 @@ redcarpet:
     extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
 safe: false
 highlighter: pygments
-title: 头脑创建
-description: '任何软件都是头脑创建,软件产品处于应用、用户、规则和硬件的合力之下。这些因素总是在不断变化，迫使软件产品也随之改变。'
+title: 立定脚跟
+description: '志不可不高，志不高，则同流合污，无足有为矣；心不可太大，心太大，则舍近图远，难期有成矣'
 theme: kunka
 disqusname: allon
 keywords: 'Allon, froyot, PHP record, Android app, web 开发, javascript 学习, Yii2 PHP框架'
