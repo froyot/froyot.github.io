@@ -18,8 +18,11 @@
 -------------
 
 *   PHP(Cakephp,ThinkPHP,Yii2) + Mysql 进行网站以及app接口开发。
+
 *   apache、nginx服务器配置搭建，HAProxy反向代理。
+
 *   android客户端开发。
+
 *   业余使用python进行程序测试以及数据抓取。python+flask+mongodb网站开发
 
 -------------
@@ -54,7 +57,7 @@
 ### 最近项目经历
 ---------------
 
-*   名称：智能表通用系统
+*   名称：智能表通用系统(inwatch kid)
 
     时间：2016-05-07到 2015-08-20
 
