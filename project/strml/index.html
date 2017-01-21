@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<!-- this page is reedit from http://strml.net/,all css file is come from https://github.com/STRML/strml.net.
+      the js file is create by myself.
+ !-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Project Work</title>
+    <style type="text/css">
+/* I'm cheating a bit */
+
+html, body {
+  margin-top: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+pre {
+  overflow: auto;
+  max-height: 90%;
+  width: 100%;
+  border-radius: 1px; /* Prevents bad clipping in Chrome */
+}
+
+#content {
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 20px;
+}
+
+#header {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  left: 0;
+  right: 0;
+  padding: 0 10px;
+}
+
+a:after {
+  content: '';
+  padding-right: 5px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-color: inherit;
+}
+
+a:last-of-type:after {
+  border: none;
+}
+    </style>
+    <style id="style-tag"></style>
+  </head>
+  <body spellcheck="false">
+    <div id="content">
+      <pre contenteditable id="work-text0"></pre>
+      <pre id="work-text1"></pre>
+      <pre id="work-text2"></pre>
+      <pre id="work-text3"></pre>
+    </div>
+    <div id="header"></div>
+    <script type="text/javascript" src="./js/sea.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript">
+      seajs.config({
+        base: "./js/",
+        alias: {
+          "jquery": "jquery.js",
+          "typed":"typed.js"
+        }
+      });
+      seajs.use(['jquery','typed'],function($){
+        seajs.use("./js/app/app",function(app){
+          app.start();
+        });
+      });
+    </script>
+  </body>
+
+</html>
