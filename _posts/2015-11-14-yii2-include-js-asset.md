@@ -7,7 +7,7 @@ description: "Yii2 use registerJsFile include file in asset director"
 ---
 
 
-## Yii2 asset 目录js的引用
+
 Yii2 提供AssetManage对一些不对外的目录的静态文件发布到可访问的asset目录中。如果
 所有的静态文件都通过AssetBundle的方式进行引入，那倒没什么值得说的了。不过像js文
 件，由于依赖关系，有时候不得不在文件开头就引入某个js文件，同时其他js文件依然在文

@@ -6,7 +6,7 @@ comments: true
 description: "PHP 数组相加与array_merge的区别"
 ---
 
-## PHP 数组相加与array_merge的区别
+
 PHP合并数组可以使用"+"号或者array_merge函数。那么这两个不同的方式有什么区别呢？
 
 *   数字键名的情况

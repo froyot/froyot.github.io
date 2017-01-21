@@ -7,7 +7,7 @@ description: "Yii2 PHP 手册阅读记录"
 ---
 
 
-## Yii2 PHP 手册阅读记录
+
 
 *   action的默认参数都是从$_GET中获取
 

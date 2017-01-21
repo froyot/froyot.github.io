@@ -4,7 +4,7 @@ title: PHP static self classname 区别
 category: PHP
 comments: true
 ---
-## PHP static, self ,类名调用的区别
+
 PHP中调用静态变量或者静态调用方法在不同的场景中可以使用
 className, static, self三种方式调用. 但是这三种方式除了
 使用场景上的些许不同还有什么需要注意的呢？前些日志搬砖不

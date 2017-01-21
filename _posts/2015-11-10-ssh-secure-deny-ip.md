@@ -1,13 +1,13 @@
 ---
 layout: post
 title: SSH 防止暴力破解
-category: 技术
+category: Developer
 comments: true
 description: "SSH,暴力破解,扫描"
 ---
 
 
-## SSH 防止暴力破解
+
 最近看服务器日志，发现secure日志中有很多登录验证记录，估计是被盯上了。ssh暴力扫
 描破解。ssh本身是几次密码错误之后就断开，但是还可以继续连接，然后再试密码和端口。
 如果ssh扫描频率大，自己就会没办法连接到服务器，因为服务器一直在验证那些实验的密码。

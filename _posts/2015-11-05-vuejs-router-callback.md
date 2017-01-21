@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Vue.js router 切换后执行某个操作
-category: 技术
+category: Developer
 comments: true
 description: "Vue.js, router,javascript, vue-router change callback."
 ---
 
 
-## Vue.js router 切换后执行某个操作
+
 Vue.js 是一个MVVM前端框架，这几天拿来做自己的小东西，学习当中。遇到一个问题.当使用router的时候，如何在切换之后执行页面初始化的操作。其他想page.js的路由都
 有callback之类的回调函数，但是vue-router好像没有。
 

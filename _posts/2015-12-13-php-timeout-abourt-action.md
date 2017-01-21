@@ -7,7 +7,7 @@ description: "PHP 浏览器关闭 和timeout之后，php程序还会执行吗？
 ---
 
 
-## PHP 浏览器关闭 和timeout之后，php程序还会执行吗？
+
 在 PHP 内部，系统维护着连接状态，其状态有三种可能的情况：
 0 - NORMAL（正常）
 1 - ABORTED（异常退出）

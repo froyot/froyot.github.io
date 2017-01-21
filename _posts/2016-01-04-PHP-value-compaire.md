@@ -6,7 +6,7 @@ comments: true
 description: "PHP 松散比较的几个值"
 ---
 
-## PHP 松散比较的几个值
+
 PHP中几个比较容易混乱的值:false,'0',0,'',null,array().这几个值在if判断中都是false,那么他们之间相互进行'=='比较呢？
 
 

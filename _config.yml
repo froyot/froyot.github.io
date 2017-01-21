@@ -1,76 +1,71 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: 子辰
+email: xianlong300@sina.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  froyot
+weibo_username: tahition
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems: [jekyll-feed,jekyll-paginate]
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
 
 
-######################### theme kunka condigure ##############################################
-# Where things are
-source:       .
-destination:  ./_site
-plugins:      ./_plugins
-layouts:      ./_layouts
-paginate:     8
-
-# Handling Reading
-safe:         false
-include:      [".htaccess"]
-keep_files:   [".git", ".svn"]
-encoding:     "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-textile_ext:  "textile"
-
-# Filtering Content
-show_drafts:  null
-limit_posts:  0
-future:       true
-unpublished:  false
-
-# Conversion
-markdown:     kramdown
-highlighter:  pygments
-lsi:          false
-excerpt_separator: "\n\n"
-
-# Serving
-detach:       false
-port:         4000
-host:         127.0.0.1
-baseurl:      "" # does not include hostname
-
-# Outputting
-permalink:     date
-paginate_path: /page:num
-timezone:      null
 
 
-#Site config
-title: Allon's Blog
-description: "Allon's Blog, record about web and app developement."
-keywords: "PHP, Android, web app, web developement, python"
-##http://froyot.github.io/
-url:
-feed: /atom.xml
-favicon: http://jekyllrb.com/favicon.png
+### themes config
+avart: 'https://avatars3.githubusercontent.com/u/6166438?v=3&s=460'
 
+
+paginate: 8
 #Nav config
 nav:
   - text: 首页
     url: index.html
+    icon: fa fa-home
   - text: 分类目录
     url: navigations/categories.html
+    icon: fa fa-folder
   - text: 文章归档
     url: navigations/archives.html
-  - text: 联系我
-    url: navigations/contact.html
+    icon: fa fa-tags
+  - text: 关于我
+    url: navigations/about.html
+    icon: fa fa-asterisk
   - text: Project
     url: navigations/projects.html
-  - text: 友情链接
-    url: navigations/links.html
+    icon: fa fa-anchor
 
 #Author config
 author:
-    name: froyot
+    name: 子辰
     email: xianlong300@sina.com
     imageLink: http://7xkcoe.com1.z0.glb.clouddn.com/blog_CgQIzlSdfmWAMydRAAN7zIi3PoU29000.jpg
-    simpleIntro: 我是 Allon
+    simpleIntro: 我是 子辰
     resumeLink: https://github.com/froyot/froyot.github.io/tree/master/personal/resume.md
     resumePdfLink: https://github.com/froyot/froyot.github.io/raw/master/personal/resume.pdf
     workproject: https://github.com/froyot/froyot.github.io/tree/master/personal/workproject.md
@@ -117,26 +112,3 @@ disqus:
   id: Allon
 
 
-#################################### global configure #######################################
-
-username: froyot
-##http://froyot.github.io
-baseurl:
-markdown: redcarpet
-redcarpet:
-    extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
-safe: false
-highlighter: pygments
-title: 头脑创建
-description: '任何软件都是头脑创建,软件产品处于应用、用户、规则和硬件的合力之下。这些因素总是在不断变化，迫使软件产品也随之改变。'
-theme: minima
-disqusname: allon
-keywords: 'Allon, froyot, PHP record, Android app, web 开发, javascript 学习, Yii2 PHP框架'
-
-
-# theme can be: hack, le
-# ap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
-# those themes are all come from GitHub Pages Themes
-#
-gems: [jekyll-paginate]
-highlighter: rouge

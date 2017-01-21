@@ -7,7 +7,7 @@ description: "PHP, POST, Array limit, max_input_var"
 ---
 
 
-## PHP POST 数组限制
+
 今天调一个接口，测试批量上传数据。上传数据用的是POST方式，分成一个多维数组上传。
 但是，问题来了，最多可以批量上传多少条数据？PHP默认POST数据的限制是2M,但是并不代
 表你就可以真的传2M以内的任意长度的数组。

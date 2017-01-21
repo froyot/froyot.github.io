@@ -1,0 +1,42 @@
+<!-- sidebar.html -->
+<header class="sidebar-header" role="banner">
+	<a href="{{ site.BASE_PATH }}/">
+		{% if site.avart %}
+		<img src="{{site.avart}}" class="img-circle" />
+		{% else %}
+			<img src="//www.gravatar.com/avatar/{{site.email_md5}}?s=150" class="img-circle" />
+		{% endif %}
+
+		
+	</a>
+	<h3 class="title">
+        <a href="{{ site.BASE_PATH }}/">{{ site.title }}</a>
+    </h3>
+</header>
+
+<div id="contact-list" class="text-center">
+	<ul class="list-unstyled list-inline">
+		{% if site.github_username %}
+		<li>
+			<a class="btn btn-default btn-sm" href="https://github.com/{{ site.github_username }}">
+				<i class="fa fa-github-alt fa-lg"></i>
+			</a>
+		</li>
+		{% endif %}
+		{% if site.weibo_username %}
+		<li>
+			<a class="btn btn-default btn-sm" href="https://weibo.com/{{ site.weibo_username }}">
+				<i class="fa fa-weibo fa-lg"></i>
+			</a>
+		</li>
+		{% endif %}
+		{% if site.email %}
+		<li>
+			<a class="btn btn-default btn-sm" href="mailto:{{ site.email }}">
+				<i class="fa fa-envelope fa-lg"></i>
+			</a>
+		</li>
+		{% endif %}
+	</ul>
+</div>
+<!-- sidebar.html end -->

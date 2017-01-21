@@ -1,12 +1,12 @@
 ---
 layout: post
 title: PHP 通过搜狗搜索 抓取微信公众号数据
-category: 技术
+category: Developer
 comments: true
 description: "PHP,抓取微信,微信公众号."
 ---
 
-## PHP 通过搜狗搜索 抓取微信公众号数据
+
 微信公众号的文章抓取一直以来由于微信本身的封闭性抓取比较困难。好在现在搜狗搜索
 可以搜索微信数据。因此用PHP进行实现数据的抓取。
 

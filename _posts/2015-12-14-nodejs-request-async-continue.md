@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Node.JS 回调函数在请求已经结束之后是否会执行？
-category: 技术
+category: Developer
 comments: true
 description: "Node.JS 回调函数在请求已经结束之后是否会执行？"
 ---
 
 
-## Node.JS 回调函数在请求已经结束之后是否会执行？
+
 做PHP，程序都是顺序执行的，所谓回调函数，其本身也是顺序执行的。但是Node.js 本身是
 回调函数是异步执行的。PHP中，如果请求结束，那么在改请求所执行的操作都结束了。那么
 Node.js里呢。

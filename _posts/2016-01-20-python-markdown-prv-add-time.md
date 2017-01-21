@@ -6,7 +6,7 @@ comments: true
 description: "sublime markdown preview 输出文档添加日期"
 ---
 
-## sublime markdown preview 输出文档添加日期
+
 最近输出文档都是使用sublime 编辑markdown文件，然后用markdown preview
 的方式输出html文件或者pdf。但是每次编辑完之后总是需要手动添加一个更新
 日期，未免有些麻烦，而且有时候修改急，会有遗忘的时候。因此想要让sublime

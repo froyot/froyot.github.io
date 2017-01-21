@@ -1,13 +1,35 @@
 ---
 layout: default
-title: 文章目录
+title: My Blog
 ---
-{% if site.theme == 'kunka' %}
-    {% include {{site.theme}}_index.html %}
-{% else %}
-    {% if site.theme == 'minima' %}
-        {% include {{site.theme}}_index.html %}
-    {% else %}
-        {% include default_index.html %}
-    {% endif %}
+
+
+{% for post in paginator.posts %}
+    <div class="posts-article">
+        <h3 class="title"><a href="{{ site.BASE_PATH }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+        <article class="rexp post-excerpt">
+            <p>{{ post.excerpt }}</p>
+        </article>
+        <a href="{{ site.BASE_PATH }}{{ post.url }}" class="more"><i class="icon-link"></i></a>
+        <div class="info">
+            <span class="info-title"><i class="fa fa-calendar" aria-hidden="true"></i> </span>
+            <span class="info-date">{{ post.date | date_to_string }}</span>
+             <span class="info-title"><i class="icon-folder-open"></i> Category: </span>
+            <span class="info-link"><a href="{{ site.BASE_PATH }}/navigations/categories.html#{{ post.category }}-ref" >{{ post.category }}</a></span>
+        </div>
+    </div>
+{% endfor %}
+{% if paginator.total_pages > 1 %}
+    <nav class="pagination fn-clear">
+        <span class="pagination-icon"><i class="fa fa-pagelines" aria-hidden="true"></i></span>
+        <ul class="pagination-list">
+            {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                    <li class="current"><a href="javascript:void(0);">{{ page }}</a></li>
+                {% else %}
+                    <li><a href="{{ site.BASE_PATH }}/{%if page > 1 %}page{{ page }}/{% endif %}">{{ page }}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
 {% endif %}

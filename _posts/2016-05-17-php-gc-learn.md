@@ -6,7 +6,7 @@ comments: true
 description: " PHP GC学习 "
 ---
 
-## PHP GC学习
+
 在5.2及更早版本的PHP中，没有专门的垃圾回收器GC（Garbage Collection），引擎在判断
 一个变量空间是否能够被释放的时候是依据这个变量的zval的refcount的值，如果refcount
 为0，那么变量的空间可以被释放，否则就不释放。思考一个问题:
