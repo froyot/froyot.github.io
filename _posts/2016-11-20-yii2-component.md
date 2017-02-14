@@ -8,7 +8,7 @@ comments: true
 
 Yii 组件组成了Yii2绝大部分的功能。Controller属于组件。
 Action属于组件，Model属于组件。Request属于组件,Response属于组件...只有几个
-Object的子类，Module,以及Exception类不是组件。组件实现了三个主要的功能：
+Object的子类，以及Exception类不是组件。组件实现了三个主要的功能：
 *	Property 属性获取设置(继承于Object类)
 *	Event 事件
 *	Behavior 行为
