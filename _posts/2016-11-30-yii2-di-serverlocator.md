@@ -14,7 +14,7 @@ comments: true
 
 ```
 
-{
+
 	public static function createObject($type, array $params = [])
     {
         if (is_string($type)) {
@@ -31,7 +31,7 @@ comments: true
             throw new InvalidConfigException('Unsupported configuration type: ' . gettype($type));
         }
     }
-}
+
 
 ```
 
