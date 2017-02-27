@@ -1,3 +1,11 @@
+*   名称:TCCM
+    时间：2016-11-15到 2017-02-20
+
+    职责：php工程师(Yii2)
+
+    项目描述：app 接口api开发，文档定制，后台开发，(nodejs)消息系统开发
+
+
 *   名称：智能表通用系统[inwatch kid](https://itunes.apple.com/cn/app/inwatch-kid/id1145791862?mt=8)
 
     时间：2016-05-07到 2015-08-20

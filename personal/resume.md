@@ -11,30 +11,20 @@
 
 -------------
 
-<br/>
 
-### 知识技能
-
--------------
-
-*   PHP(Cakephp,ThinkPHP,Yii2) + Mysql 进行网站以及app接口开发。
-
-*   apache、nginx服务器配置搭建，HAProxy反向代理。
-
-*   android客户端开发。
-
-*   业余使用python进行程序测试以及数据抓取。python+flask+mongodb网站开发
-
--------------
-<br/>
 
 ### 工作经历
 ---------------
-*   2015.05~至今 深圳市映趣科技(inWatch), PHP开发，负责app接口以及后台开发
+*   2015.05~2016.11 深圳市三友智云, PHP开发，负责app接口以及后台开发
+
+    使用Yii2,nodejs 开发手表以及app通讯系统
+
+
+*   2015.05~2016.10 深圳市映趣科技(inWatch), PHP开发，负责app接口以及后台开发
 
     使用Yii2,workman 支持智能手表通用系统api,后台开发
 
-<br/>
+
 
 #### 实习经历
 
@@ -51,11 +41,18 @@
 *   2012.05~2012.09 上海推推网络科技有限(全职), PHP开发，负责电商网站后台开发
 
 -------------
-<br/>
+
 
 
 ### 最近项目经历
 ---------------
+*   名称:TCCM
+    时间：2016-11-15到 2017-02-20
+
+    职责：php工程师(Yii2)
+
+    项目描述：app 接口api开发，文档定制，后台开发，nodejs 消息系统开发  
+
 
 *   名称：智能表通用系统(inwatch kid)
 
@@ -76,7 +73,8 @@
 
     项目描述：软件服务端以及接口,对接联通返档接口激活sim卡
 
-
+<br/>
+<br/>
 *   名称：inHealth
 
     时间：2015-08-01到2016-01-07
@@ -85,11 +83,21 @@
 
     项目描述：软件服务端以及接口,对接微信智能硬件
 
+*   名称:Yii2 CMS(个人) 
+    时间：2015-10-01到2016-01-07
+
+    职责：php 
+
+    项目描述：基于Yii2,开发CMS系统，支持主题切换。
 
 <br/>
 
+
+
 ### 其他
 ---------------
+
+
 
 **github**: [http://froyot.github.com](http://froyot.github.com)
 
@@ -98,6 +106,8 @@
 **个人网站** :[http://www.aiaiaini.com/](http://www.aiaiaini.com/)
 
 **项目列表**:[https://github.com/froyot/froyot.github.io/blob/master/personal/workproject.md](https://github.com/froyot/froyot.github.io/blob/master/personal/workproject.md)
+
+**其他技能** 业余使用python进行程序测试以及数据抓取。python+flask+mongodb网站开发
 
 ----------------
 
