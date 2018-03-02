@@ -22,6 +22,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  froyot
 weibo_username: tahition
+pagekeywords: PHP开发,web开发,Yii2.0 框架,ThinkPHP5 框架,Python
+pagediscription: 记录所学，所用,所见，所闻，一起啊。
+
 
 # Build settings
 markdown: kramdown
