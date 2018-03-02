@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 子辰
+title: 一起啊
 email: xianlong300@sina.com
 description: PHP从业者
   
@@ -60,10 +60,10 @@ nav:
 
 #Author config
 author:
-    name: 子辰
+    name: Allon
     email: xianlong300@sina.com
     imageLink: http://7xkcoe.com1.z0.glb.clouddn.com/blog_CgQIzlSdfmWAMydRAAN7zIi3PoU29000.jpg
-    simpleIntro: 我是 子辰
+    simpleIntro: 我是 Allon
     resumeLink: https://github.com/froyot/froyot.github.io/tree/master/personal/resume.md
     resumePdfLink: https://github.com/froyot/froyot.github.io/raw/master/personal/resume.pdf
     workproject: https://github.com/froyot/froyot.github.io/tree/master/personal/workproject.md
