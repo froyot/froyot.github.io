@@ -124,5 +124,30 @@ Array
 通过上面三种情况，可以了解到foreach引用传递之后，我们需要unset($item),接触引用，否则一旦循环之后的代码有是有到循环中的变量名，很容易造成bug。由于大型系统并非一个人完成，所以在多人协作的时候，一定要把自己的数据处理干净，避免bug
 
 
+#### 其他引用相关
+
+
+```
+
+$arr = [0,1];
+$arr = [&arr];
+var_dump($arr === $arr[0]);
+
+```
+
+以上输出结果是true。因为$arr 和 $arr[0]指向同一个数据地址。
+
+```
+
+$arr = [0,1];
+function test($item,$key,&$arr){
+    unset($arr[$key]);
+}
+array_walk($arr, 'test',$arr);
+var_dump($arr);
+
+```
+
+以上输出内容还是[0,1]。
 
 
