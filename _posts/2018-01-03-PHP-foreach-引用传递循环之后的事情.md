@@ -126,7 +126,6 @@ Array
 
 #### 其他引用相关
 
-
 ```
 
 $arr = [0,1];
@@ -138,7 +137,6 @@ var_dump($arr === $arr[0]);
 以上输出结果是true。因为$arr 和 $arr[0]指向同一个数据地址。
 
 ```
-
 $arr = [0,1];
 function test($item,$key,&$arr){
     unset($arr[$key]);
