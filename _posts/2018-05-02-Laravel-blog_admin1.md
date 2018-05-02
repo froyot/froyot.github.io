@@ -9,19 +9,19 @@ keywords: Laravel,PHP,博客
 
 ### 搭建后台管理系统
 
-####	创建用户认证系统
+####    创建用户认证系统
 
 Laravel 中实现登录认证非常简单。实际上，几乎所有东西 Laravel 都已经为你配置好了。配置文件位于 config/auth.php，其中包含了用于调整认证服务行为的、文档友好的选项配置。
 
 执行```php artisan make:auth``` 和 ```php artisan migrate``` 创建控制器以及需要的数据表。脚本会在目录app/Http/Auth 下创建一下几个文件:
 
-*	LoginController 登录退出操作，继承App\Http\Controllers\Controller，所有的业务逻辑在```trait AuthenticatesUsers```中，可以通过设置属性```$redirectTo```改变登录之后的跳转地址，设置```$redirectAfterLogout```改变退出之后的跳转地址;
+*   LoginController 登录退出操作，继承App\Http\Controllers\Controller，所有的业务逻辑在```trait AuthenticatesUsers```中，可以通过设置属性```$redirectTo```改变登录之后的跳转地址，设置```$redirectAfterLogout```改变退出之后的跳转地址;
 
-*	RegisterController 提供用户注册相关操作，所有业务逻辑在```trait RegistersUsers```中
+*   RegisterController 提供用户注册相关操作，所有业务逻辑在```trait RegistersUsers```中
 
-*	ForgotPasswordController 忘记密码，发送验证邮件相关操作
+*   ForgotPasswordController 忘记密码，发送验证邮件相关操作
 
-*	ResetPasswordController 重置密码相关操作
+*   ResetPasswordController 重置密码相关操作
 
 同时会在routes/web.php文件中添加用户认证相关路由
 
@@ -30,9 +30,9 @@ Auth::routes();
 
 ```
 
-####	创建博客管理
+####    创建博客管理
 
-*	创建控制器
+*   创建控制器
 执行以下命令:
 ```
 php artisan make:controller Admin\\PostController
@@ -41,14 +41,14 @@ php artisan make:controller Admin\\PostController
 脚本会在app\Http\Controlles下创建admin目录，并创建PostController文件，修改PostController文件，添加后台显示文章列表操作，添加以下代码:
 
 ```
-	public function index()
-	{
-	    return view('admin.post.index');
-	}
+    public function index()
+    {
+        return view('admin.post.index');
+    }
 
 ```
 
-*	创建视图文件
+*   创建视图文件
 
 在resources下创建admin/post目录，并在该目录下创建admin/post/index.blade.php文件，文件内容如下:
 
@@ -119,9 +119,12 @@ php artisan make:controller Admin\\PostController
 
 ```
 
-*	修改路由route/web.php
+
+*   修改路由route/web.php
+
 
 ```
+
 // Admin area
 Route::get('admin', function () {
     return redirect('/admin/post');
@@ -130,9 +133,10 @@ Route::namespace('Admin')->middleware(['auth'])->group(function () {
     Route::resource('admin/post', 'PostController');
 });
 
+
 ```
 
-*	访问地址:http://127.0.0.1:8000/admin/post
+*   访问地址:http://127.0.0.1:8000/admin/post
 
 看到以下内容:
 
