@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Laravel5.6 博客搭建系列一
+title: Laravel5.6 博客搭建系列二--管理系统搭建
 category: PHP
 comments: true
-description: PHP Laravel5.6 博客
+description: PHP Laravel5.6 博客，后台管理
 keywords: Laravel,PHP,博客
 ---
 
@@ -26,6 +26,7 @@ Laravel 中实现登录认证非常简单。实际上，几乎所有东西 Larav
 同时会在routes/web.php文件中添加用户认证相关路由
 
 ```
+
 Auth::routes();
 
 ```
@@ -34,6 +35,7 @@ Auth::routes();
 
 *   创建控制器
 执行以下命令:
+
 ```
 php artisan make:controller Admin\\PostController
 
@@ -41,6 +43,7 @@ php artisan make:controller Admin\\PostController
 脚本会在app\Http\Controlles下创建admin目录，并创建PostController文件，修改PostController文件，添加后台显示文章列表操作，添加以下代码:
 
 ```
+
     public function index()
     {
         return view('admin.post.index');
@@ -53,6 +56,7 @@ php artisan make:controller Admin\\PostController
 在resources下创建admin/post目录，并在该目录下创建admin/post/index.blade.php文件，文件内容如下:
 
 ```
+
 @extends('layouts.app')
 
 @section('content')
@@ -117,6 +121,7 @@ php artisan make:controller Admin\\PostController
 </script>
 @stop
 
+
 ```
 
 
@@ -125,7 +130,6 @@ php artisan make:controller Admin\\PostController
 
 ```
 
-// Admin area
 Route::get('admin', function () {
     return redirect('/admin/post');
 });
