@@ -7,17 +7,20 @@ description: PHP Laravel5.6 博客
 keywords: Laravel,PHP,博客
 ---
 
+Laravel框架目前已经发展到5.6版本了，但是目前官方的入门教程还是基于5.1的博客教程。为了更多的人能快速上手新版本，本教程使用Laravel5.6
+一部一部跟大家分享如何搭建一个博客系统。下面来看一下如何用十分钟使用Laravel5.6搭建简单博客
+
 ### 安装环境
 Laravel 框架对PHP版本和扩展有一定要求
 
-*	PHP >= 7.1.3
-*	PHP OpenSSL 扩展
-*	PHP PDO 扩展
-*	PHP Mbstring 扩展
-*	PHP Tokenizer 扩展
-*	PHP XML 扩展
-*	PHP Ctype 扩展
-*	PHP JSON 扩展
+*   PHP >= 7.1.3
+*   PHP OpenSSL 扩展
+*   PHP PDO 扩展
+*   PHP Mbstring 扩展
+*   PHP Tokenizer 扩展
+*   PHP XML 扩展
+*   PHP Ctype 扩展
+*   PHP JSON 扩展
 
 下载安装PHP7,composer,mysql
 执行 ```composer global require "laravel/installer"```, 安装laravel之后配置环境变量,执行```laravel new blog```
@@ -53,7 +56,7 @@ Schema::create('posts', function (Blueprint $table) {
 
 ### 创建博客文章模型
 
-执行```php artisan make:model --migration Post```，命令会在app目录下建立一个Post.php文件，编辑文件
+命令同时会在app目录下建立一个Post.php文件，编辑文件
 
 ```
     protected $dates = ['published_at'];
@@ -77,21 +80,22 @@ Schema::create('posts', function (Blueprint $table) {
 Laravel提供数据填充，添加factory 文件 database/factories/PostFactory.php，内容如下:
 
 ``` 
+<?php
+use Faker\Generator as Faker;
 $factory->define(App\Post::class, function (Faker $faker) {
-	return [
+    return [
         'title' => $faker->sentence(mt_rand(3, 10)),
         'content' => join("\n\n", $faker->paragraphs(mt_rand(3, 6))),
         'published_at' => $faker->dateTimeBetween('-1 month', '+3 days'),
     ];
 });
-
 ```
 
 执行```php artisan make:seed PostsTableSeeder``` 创建生博客文章数据成器，命令会在database/seeds下建立PostsTableSeeder.php文件。然后执行***composer dump-autoload 导入（否则class not found)***
 
 ```
 function run(){
-	factory(App\Post::class, 50)->create();
+    factory(App\Post::class, 50)->create();
 }
 
 ```
@@ -139,6 +143,16 @@ Route::get('blog/{slug}', 'BlogController@showPost');
 执行```php artisan make:controller BlogController```,在app/Http/Controllers下建立BlogController.php,修改内容如下
 
 ```
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Post;
+use Illuminate\Support\Carbon;
+
+class BlogController extends Controller
+{
     public function index()
     {
         $posts = Post::where('published_at', '<=', Carbon::now())
@@ -153,6 +167,8 @@ Route::get('blog/{slug}', 'BlogController@showPost');
         $post = Post::whereSlug($slug)->firstOrFail();
         return view('blog.post')->withPost($post);
     }
+}
+
 
 ```
 
@@ -166,7 +182,7 @@ index.blade.php
 <html>
     <head>
         <title>{{ config('blog.title') }}</title>
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -198,7 +214,7 @@ post.blade.php
 <html>
     <head>
         <title>{{ $post->title }}</title>
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -219,18 +235,13 @@ post.blade.php
 ### 效果
 执行```php artisan serve``` 启动服务，在浏览器中输入http://127.0.0.1:8080 浏览器会跳转到http://127.0.0.1:8080/blog 并展示下面内容
 
-![image](http://p4ou67wbp.bkt.clouddn.com/larvel56blog1.png)
+![image](http://p4ou67wbp.bkt.clouddn.com/blog1.png)
 
 
 ### 如果报错:
 
-*   1071 Specified key was too long; max key length is 767 bytes,修改AppServiceProvider，boot中添加:Schema::defaultStringLength(191);
+*   1071 Specified key was too long; max key length is 767 bytes,修改App\Providers\AppServiceProvider.php，引入```use Illuminate\Support\Facades\Schema;``` ,在boot中添加:Schema::defaultStringLength(191);
 
 
-
-
-
-
-
-
+本教程代码 [下载](http://p4ou67wbp.bkt.clouddn.com/blog1.zip)
 
