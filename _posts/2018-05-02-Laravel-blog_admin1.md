@@ -128,12 +128,15 @@ Route::namespace('Admin')->middleware(['auth'])->group(function () {
 
 在```</head>```前添加@yield('styles')，在```</body>```前添加@yield('scripts'),创建样式以及脚本模块，后续在视图文件中添加样式和js脚本
 
-### 效果
+#### 效果
 
 访问 ```http://127.0.0.1:8000/admin/default``` 可以看到以下内容
 
 
 ![image](http://p4ou67wbp.bkt.clouddn.com/blog2.png)
+
+
+本教程代码[下载](http://p4ou67wbp.bkt.clouddn.com/blog2.zip)
 
 
 
