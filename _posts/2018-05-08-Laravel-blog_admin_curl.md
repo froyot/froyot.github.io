@@ -754,8 +754,8 @@ resource路由删除操作需要的请求方式是delete,form 没办法发起del
 
 
 效果如下:
-![image](http://p4ou67wbp.bkt.clouddn.com/blog3.png)
+![image](http://blog.static.aiaiaini.com/blog3.png)
 
-本教程代码[下载](http://p4ou67wbp.bkt.clouddn.com/blog3.zip)
+本教程代码[下载](http://blog.static.aiaiaini.com/blog3.zip)
 
 

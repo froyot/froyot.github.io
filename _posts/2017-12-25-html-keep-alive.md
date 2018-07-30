@@ -37,13 +37,13 @@ http属于短连接形式，无状态的。每次请求，建立tcp链接之后�
 未开启keep-alive 3次访问相同也没 tcp请求数据
 
 
-![未开启keep-alive](http://p4ou67wbp.bkt.clouddn.com/e84c5effa4ebe2c2ab3c37b4e69bbd56.png)
+![未开启keep-alive](http://blog.static.aiaiaini.com/e84c5effa4ebe2c2ab3c37b4e69bbd56.png)
 
 
 未开启keep-alive 3次访问相同也没 tcp请求数据
 
 
-![开启keep-alive](http://p4ou67wbp.bkt.clouddn.com/f1408f5b0fcba680c20653eb086e292c.PNG)
+![开启keep-alive](http://blog.static.aiaiaini.com/f1408f5b0fcba680c20653eb086e292c.PNG)
 
 从两张图的对比可以知道，开启keep-alive的时候，连续三个http请求复用了同一个tcp连接。而没有开启keep-alive的3次请求，每次请求之后都会断开之前的连接，不会复用。对服务器而言，回尽可能的复用tcp，所以当一个活跃的tcp请求客户端断开之后，服务器端会进入TIME_WAITE状态，因此开启keep-alive也能够减少服务器TIME_WAITE的数目。
 

@@ -34,13 +34,13 @@ keywords: ThinkCmf,PHP,后台模板 material
 
 ### 界面效果显示
 
-![chart teamplate](http://7xkcoe.com1.z0.glb.clouddn.com/cmf_chart.png) 
+![chart teamplate](http://froyoimg.static.aiaiaini.com/cmf_chart.png) 
 
-![table teamplate](http://7xkcoe.com1.z0.glb.clouddn.com/cmf_table.png)
+![table teamplate](http://froyoimg.static.aiaiaini.com/cmf_table.png)
 
-![form teamplate](http://7xkcoe.com1.z0.glb.clouddn.com/cmf_form.png)
+![form teamplate](http://froyoimg.static.aiaiaini.com/cmf_form.png)
 
-![setting teamplate](http://7xkcoe.com1.z0.glb.clouddn.com/cmf_setting.png)
+![setting teamplate](http://froyoimg.static.aiaiaini.com/cmf_setting.png)
 
 ### 使用方式
 

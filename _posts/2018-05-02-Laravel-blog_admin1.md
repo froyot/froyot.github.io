@@ -133,10 +133,10 @@ Route::namespace('Admin')->middleware(['auth'])->group(function () {
 访问 ```http://127.0.0.1:8000/admin/default``` 可以看到以下内容
 
 
-![image](http://p4ou67wbp.bkt.clouddn.com/blog2.png)
+![image](http://blog.static.aiaiaini.com/blog2.png)
 
 
-本教程代码[下载](http://p4ou67wbp.bkt.clouddn.com/blog2.zip)
+本教程代码[下载](http://blog.static.aiaiaini.com/blog2.zip)
 
 
 

@@ -83,7 +83,7 @@ p a {color:#222;}
 
 ```
 
-![avatar](http://7xkcoe.com1.z0.glb.clouddn.com/css%20specifiy.PNG)
+![avatar](http://froyoimg.static.aiaiaini.com/css%20specifiy.PNG)
 
 浏览器中显示的顺序就是样式优先级别的顺序。important除外。从结果可以看出:
 

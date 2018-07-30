@@ -235,7 +235,7 @@ post.blade.php
 ### 效果
 执行```php artisan serve``` 启动服务，在浏览器中输入http://127.0.0.1:8080 浏览器会跳转到http://127.0.0.1:8080/blog 并展示下面内容
 
-![image](http://p4ou67wbp.bkt.clouddn.com/blog1.png)
+![image](http://blog.static.aiaiaini.com/blog1.png)
 
 
 ### 如果报错:
@@ -243,5 +243,5 @@ post.blade.php
 *   1071 Specified key was too long; max key length is 767 bytes,修改App\Providers\AppServiceProvider.php，引入```use Illuminate\Support\Facades\Schema;``` ,在boot中添加:Schema::defaultStringLength(191);
 
 
-本教程代码 [下载](http://p4ou67wbp.bkt.clouddn.com/blog1.zip)
+本教程代码 [下载](http://blog.static.aiaiaini.com/blog1.zip)
 
