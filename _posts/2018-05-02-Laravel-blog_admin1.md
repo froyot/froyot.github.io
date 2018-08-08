@@ -97,7 +97,7 @@ Route::namespace('Admin')->middleware(['auth'])->group(function () {
 很多情况下前后台使用的模板不同，因此需要给后台自定义视图模板。复制一份resources/layouts/app.blade.php 到resources/admin/layouts/main.blade.php
 
 在
-```
+```html
 <a class="navbar-brand" href="{{ url('/') }}">
     {{ config('app.name', 'Laravel') }}
 </a>
@@ -107,7 +107,7 @@ Route::namespace('Admin')->middleware(['auth'])->group(function () {
 后面加入以下内容，给后台添加导航栏
 
 
-```
+```html
 
 <ul class="nav">
   <li class="nav-item">

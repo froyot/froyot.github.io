@@ -506,7 +506,7 @@ resources/views/admin/partials目录下创建error.blade.php,success.blade.php �
 
 error.blade.php文件内容如下:
 
-```
+```html
 @if (count($errors) > 0)
     <div class="alert alert-danger">
         <strong>Whoops!</strong>
@@ -538,7 +538,7 @@ success.blade.php 文件内容如下:
 
 在 resources/views/admin/post 目录下创建 index.blade.php：
 
-```
+```html
 @extends('admin.layouts.main')
 @section('content')
 <div class="container">
@@ -597,7 +597,7 @@ success.blade.php 文件内容如下:
 
 创建表单_form.blade.php：
 
-```
+```html
 <div class="row">
     <div class="col-md-8">
         <div class="form-group">
@@ -674,7 +674,7 @@ success.blade.php 文件内容如下:
 
 *   创建编辑视图文件edit.blade.php
 
-```
+```html
 @extends('admin.layouts.main')
 @section('content')
 <div class="container">
@@ -714,7 +714,7 @@ success.blade.php 文件内容如下:
 
 *   创建新建视图文件create.blade.php
 
-```
+```html
 @extends('admin.layouts.main')
 @section('content')
 <div class="container">

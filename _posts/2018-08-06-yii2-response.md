@@ -11,19 +11,13 @@ keywords: Yii2,http返回码,web响应输出,文件下载
 一个完整的网络请求，最后都需要一个符合协议的返回。Yii2在处理web请求之后，统一通过web/Response处理返回。错误也会经过错误处理返回一个Response。
 
 #### 一个Response完整的流程有哪些?
-创建Response对象，设置Resonse响应格式json,html,xml等
-
-触发前置事件,暴露操给开发者在输出前对数据进行调整等
-
-数据格式化。将所有response的内容更加输出格式转换成响应的字符串，并确定http返回码。
-
-设置响应头。输出所有自定会返回头和标注http协议返回头。
-
-输出内容。将字符串内容输出，并刷新缓冲区
-
-触发后置事件。触发Response后置操作
-
-数据清理
+*   创建Response对象，设置Resonse响应格式json,html,xml等
+*   触发前置事件,暴露操给开发者在输出前对数据进行调整等
+*   数据格式化。将所有response的内容更加输出格式转换成响应的字符串，并确定http返回码。
+*   设置响应头。输出所有自定会返回头和标注http协议返回头。
+*   输出内容。将字符串内容输出，并刷新缓冲区
+*   触发后置事件。触发Response后置操作
+*   数据清理
 
 #### Yii2的Response
 
@@ -36,6 +30,7 @@ keywords: Yii2,http返回码,web响应输出,文件下载
 总的而言，Yii2的Response 代码逻辑结构相当清晰，而且输出内容都非常规范的遵循http协议规范。同时提供前置事件，数据准备前置事件，后置事件给开发者在不同的情况下处理额外的数据。代码在阅读起来非常明了。从头到尾，完整的看一遍，就可以完全理解。以下是Response中的两段代码。
 
 ##### 输出内容代码
+```php
     protected function sendContent()
     {
         if ($this->stream === null) {
@@ -64,6 +59,7 @@ keywords: Yii2,http返回码,web响应输出,文件下载
             fclose($this->stream);
         }
     }
+```
 没有什么特殊的。如果是简单的字符串，直接echo。主要看它处理stream的情况。
 
 首先设置超时时间。对于读取文件流，没办法确定文件读取需要的时间，因此设置超时时间很必要。
@@ -71,6 +67,7 @@ keywords: Yii2,http返回码,web响应输出,文件下载
 设置最大读取长度。每个请求都需要占用一定的内存去处理数据。为了避免我限制申请内存造成php程序报内存不足，因此对于文件读取程序，必须设置读取限制。读取完及时刷新出去。
 
 ##### 下载文件请求头设置
+```php
 public function setDownloadHeaders($attachmentName, $mimeType = null, $inline = false, $contentLength = null)
     {
         $headers = $this->getHeaders();
@@ -92,6 +89,7 @@ public function setDownloadHeaders($attachmentName, $mimeType = null, $inline = 
 
         return $this;
     }
+```
 想要输出一个下载文件的响应，Yii2的输出请求头中有以下内容:
 
 *   Pragma:public 非必须

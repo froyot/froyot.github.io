@@ -33,7 +33,7 @@ Laravel 框架对PHP版本和扩展有一定要求
 ### 创建博客文章模型数据迁移文件
 执行```php artisan make:model --migration Post```，会在database/migrations目录下建立"日期create_posts_table.php"文件，编辑该文件
 
-```
+```php
 Schema::create('posts', function (Blueprint $table) {
     $table->increments('id');
     $table->string('slug')->unique();
@@ -178,7 +178,7 @@ class BlogController extends Controller
 
 index.blade.php
 
-```
+```html
 <html>
     <head>
         <title>{{ config('blog.title') }}</title>
@@ -210,7 +210,7 @@ index.blade.php
 
 post.blade.php
 
-```
+```html
 <html>
     <head>
         <title>{{ $post->title }}</title>
