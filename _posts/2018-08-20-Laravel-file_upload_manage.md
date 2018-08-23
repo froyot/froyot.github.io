@@ -1,4 +1,11 @@
-#### Laravel5.6 文件上传以及文件管理后台
+---
+layout: post
+title: Laravel5.6 文件上传以及文件管理后台
+category: PHP
+comments: true
+description: Laravel5.6 文件上传以及文件管理后台
+keywords: Laravel,PHP,文件上传,博客,CURD
+---
 
 
 今天聊聊在Laravel5.6 如何实现文件上传功能，以及上传文件的管理功能。主要有文件列表，上传新文件，创建文件夹，删除文件夹以及删除文件。
@@ -77,7 +84,8 @@ Laravel文件上传Storage使用的是local disk，上传文件保存在/storage
 ```
 
 访问```http://127.0.0.1:8000/admin/file/index```,可以看到文件列表已经显示正常。
-[!image](http://blog.static.aiaiaini.com/blog/file_index_ab7b32e9bc47e13fd41e7656d1dc4a9f.png)
+
+![image](http://blog.static.aiaiaini.com/blog/file_index_ab7b32e9bc47e13fd41e7656d1dc4a9f.png)
 
 
 ##### 新建文件夹
@@ -102,7 +110,8 @@ Laravel文件上传Storage使用的是local disk，上传文件保存在/storage
 *	视图文件
 视图文件采用moda方式弹窗添加，在index.blade.php中添加一个moda。内容见文后代码。
 moda内容中只有一个表单，点击确定提交到createFolder，在列表中点击New Folder可以看到以下内容
-[!image](http://blog.static.aiaiaini.com/blog/file_newdirector_ab7b32e9bc47e13fd41e7656d1dc4a9f.png)
+
+![image](http://blog.static.aiaiaini.com/blog/file_newdirector_ab7b32e9bc47e13fd41e7656d1dc4a9f.png)
 
 
 ##### 上传文件
@@ -127,7 +136,8 @@ moda内容中只有一个表单，点击确定提交到createFolder，在列表�
 *	视图文件
 文件上传采用moda方式弹窗添加，在index.blade.php中添加一个moda。内容见文后代码。
 moda内容中只有一个表单，点击确定提交到upload，在列表中点击upload可以看到以下内容
-[!image](http://blog.static.aiaiaini.com/blog/file_upload_ab7b32e9bc47e13fd41e7656d1dc4a9f.png)
+
+![image](http://blog.static.aiaiaini.com/blog/file_upload_ab7b32e9bc47e13fd41e7656d1dc4a9f.png)
 
 
 ##### 文件的删除

@@ -2,6 +2,12 @@
 $fromdir = str_replace("/",DIRECTORY_SEPARATOR,str_replace("\\", DIRECTORY_SEPARATOR, $argv[1]));
 $todir = str_replace("/",DIRECTORY_SEPARATOR,str_replace("\\", DIRECTORY_SEPARATOR, $argv[2]));
 
+function logmsg($debug,$msg){
+	if($debug)
+	{
+		var_dump($msg);
+	}
+}
 
 function my_dir($dir) {
     $files = array();
@@ -23,7 +29,7 @@ function my_dir($dir) {
 
 
 $files = my_dir($fromdir);
-
+$debug = false;
 foreach ($files as $key => $file) {
 	$content = file_get_contents($file);
 	$filename = substr($file,strrpos( $file,DIRECTORY_SEPARATOR )+1);
@@ -39,10 +45,11 @@ foreach ($files as $key => $file) {
 
 			if(strpos($c,'date')===false)
 			{
-				$match[0] = "---".$match[1]."date: ".$filetime.' '.date('H:i:s')."\r\n---";
+				$match[0] = "---".$match[1]."date: ".$filetime." 10:00:00\r\n---";
 			}
 			return $match[0];
 		}, $content);
+
 		$content = preg_replace_callback('/```(.*?)```/', function($match) use($filetime){
 			
 			return '`'.$match[1].'`';
