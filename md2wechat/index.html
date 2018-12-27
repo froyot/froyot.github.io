@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>markdown 文档格式化成公众号样式</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticfile.org/prism/9000.0.1/themes/prism.min.css">
+    <link href="https://cdn.staticfile.org/prism/9000.0.1/themes/prism-okaidia.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="./css/wechat.css">
+
+    <style type="text/css">
+#editor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 634.5px;
+    transform: translate(0px, 0px);
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: auto;
+    background-color: #333;
+    font-family: courier, monospace;
+    font-size: inherit;
+    color: #fff;
+    word-wrap: break-word;
+    word-break: normal;
+    white-space: pre-wrap;
+}
+
+
+#editor_render {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    -webkit-transform: translate(310px, 0px);
+    transform: translate(310px, 0px);
+    width: 320px;
+    transform: translate(644px, 0px);
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: auto;
+    background-color: #fff;
+}
+
+    </style>
+</head>
+
+<body>
+
+<textarea id="editor">
+---
+layout: post
+title: 
+category: php
+comments: true
+description: 
+keywords: 
+---
+
+这是一段文字
+
+# 这是标题1
+
+## 这是标题2
+
+### 这是标题3
+
+#### 这是标题4
+
+#### 代码样式
+
+*   php代码
+```php
+
+echo "test"; 
+echo "代码样式";
+
+```
+*   js代码
+
+```js
+var a = 1;
+var b = 2;
+```
+*   java代码
+
+```java
+package com.test.p;
+
+class test{
+    
+}
+
+```
+
+*   python代码
+
+```python
+import os
+
+def test():
+    pass
+
+```
+
+``` var_dump()```响应式网页设计出现以来，更多是使用百分比布自适应布局，特别是在移动端，两端对齐的方式显得越来越重要。那么，如何使用css实现两端对齐，相信很多同学会文本对齐的text-align:justify，这是今天要讲的其中一种方式，另外还有两种更精彩的实现方式，请往下看
+
+链接:[测试](http://www.baidu.com)
+
+![图片说明](http://www.aiaiaini.com/ueditor/php/upload/image/20151127/1448606898110588.png)
+
+这是行内代码样式
+
+</textarea>
+
+<div id="editor_render">
+    <div id="markdown_result">
+
+    </div>
+</div>
+
+<script type="text/javascript" src="./js/prism.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.4.2/markdown-it.min.js"></script>
+<script type="text/javascript">
+
+
+
+var md = window.markdownit({
+    highlight: function (str, lang) {
+    if (lang) {
+      try {
+        return '<pre class="language-'+lang+'"><code class="language-'+lang+'">' +
+                Prism.highlight(str,Prism.languages[lang],lang)+
+               '</code></pre>';
+      } catch (__) {}
+    }
+ 
+    return '<pre ><code>' + md.utils.escapeHtml(str) + '</code></pre>';
+  },
+  "img":function(str){
+    console.log(str);
+  }
+});
+
+$("#editor").change(function(){
+  render();
+});
+
+
+function render(){
+    var source = $('#editor').val();
+    source = source.replace(/\-\-\-[^#]*\-\-\-/,"");
+    var result = md.render(source);
+    $('#markdown_result').html(result);
+}
+render();
+
+</script>
+</body>
+</html>
