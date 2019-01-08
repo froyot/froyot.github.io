@@ -18,25 +18,39 @@
 	<ul class="list-unstyled list-inline">
 		{% if site.github_username %}
 		<li>
-			<a class="btn btn-default btn-sm" href="https://github.com/{{ site.github_username }}">
+			<a class="btn btn-dark btn-sm" href="https://github.com/{{ site.github_username }}">
 				<i class="fa fa-github-alt fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
 		{% if site.weibo_username %}
 		<li>
-			<a class="btn btn-default btn-sm" href="https://weibo.com/{{ site.weibo_username }}">
+			<a class="btn btn-dark btn-sm" href="https://weibo.com/{{ site.weibo_username }}">
 				<i class="fa fa-weibo fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
+
 		{% if site.email %}
 		<li>
-			<a class="btn btn-default btn-sm" href="mailto:{{ site.email }}">
+			<a class="btn btn-dark btn-sm" href="mailto:{{ site.email }}">
 				<i class="fa fa-envelope fa-lg"></i>
 			</a>
 		</li>
 		{% endif %}
 	</ul>
 </div>
+{% if site.wechat %}
+
+<div id="wechat-info" style="text-align: center;margin-top:2em;">
+    <div class="info-item">
+        <img src="{{site.wechat}}" title="扫码关注公众号获取更多文章"/>
+    </div>
+</div>
+<div style="text-align: center;">
+	<a class="clickshowimg " data-img="{{ site.wechat }}">
+		更多内容查看公众号:写PHP的老王
+	</a>
+</div>
+{% endif %}
 <!-- sidebar.html end -->

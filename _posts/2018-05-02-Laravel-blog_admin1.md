@@ -97,15 +97,18 @@ Route::namespace('Admin')->middleware(['auth'])->group(function () {
 很多情况下前后台使用的模板不同，因此需要给后台自定义视图模板。复制一份resources/layouts/app.blade.php 到resources/admin/layouts/main.blade.php
 
 在
+{% raw %}
 ```html
 <a class="navbar-brand" href="{{ url('/') }}">
     {{ config('app.name', 'Laravel') }}
 </a>
 
 ```
+{% endraw %}
 
 后面加入以下内容，给后台添加导航栏
 
+{% raw %}
 
 ```html
 
@@ -125,6 +128,8 @@ Route::namespace('Admin')->middleware(['auth'])->group(function () {
 </ul>
 
 ```
+{% endraw %}
+
 
 在```</head>```前添加@yield('styles')，在```</body>```前添加@yield('scripts'),创建样式以及脚本模块，后续在视图文件中添加样式和js脚本
 

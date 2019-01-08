@@ -20,6 +20,8 @@ Sphinx用于如此着名的系统中 Joomla.org， CouchSurfing.org， Wikimapia
 >支持作为Mysql的存储引擎
 
 
+<!-- more -->
+
 ### 安装
 从官网[http://sphinxsearch.com](http://sphinxsearch.com/downloads/current/)下载最新版本。windows版本是一个压缩包，本地解压可以直接使用。
 目录结构如下:

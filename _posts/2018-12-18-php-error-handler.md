@@ -13,6 +13,7 @@ keywords: php,set_error_handler,trigger_error
 
 Laravel在app初始化的时候注册了错误处理函数，异常处理函数，异常退出处理函数，最终将错误转化成异常抛出，统一通过异常处理函数进行处理。
 
+
 ```php
     public function bootstrap(Application $app)
     {
@@ -38,6 +39,7 @@ Laravel在app初始化的时候注册了错误处理函数，异常处理函数�
         }
     }
 ```
+<!-- more -->
 
 ### Yii2
 

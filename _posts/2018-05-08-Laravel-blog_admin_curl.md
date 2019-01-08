@@ -211,9 +211,12 @@ Route::namespace('Admin')->middleware(['auth'])->group(function () {
 
 后台视图模板resources/admin/layouts/main.blade.php中设置文章练tab链接
 
+{% raw %}
+
 ```
 <a class="nav-link" href="{{route('post.index')}}">{{ __('Posts') }}</a>
 ```
+{% endraw %}
 
 #### 修改控制器
 
@@ -506,6 +509,8 @@ resources/views/admin/partials目录下创建error.blade.php,success.blade.php �
 
 error.blade.php文件内容如下:
 
+{% raw %}
+
 ```html
 @if (count($errors) > 0)
     <div class="alert alert-danger">
@@ -519,8 +524,12 @@ error.blade.php文件内容如下:
     </div>
 @endif
 ```
+{% endraw %}
+
 
 success.blade.php 文件内容如下:
+
+{% raw %}
 
 ```
 @if (Session::has('success'))
@@ -533,10 +542,13 @@ success.blade.php 文件内容如下:
     </div>
 @endif
 ```
+{% endraw %}
 
 *   创建博客列表视图文件
 
 在 resources/views/admin/post 目录下创建 index.blade.php：
+
+{% raw %}
 
 ```html
 @extends('admin.layouts.main')
@@ -592,10 +604,14 @@ success.blade.php 文件内容如下:
 @endsection
 
 ```
+{% endraw %}
+
 
 *   创建编辑博客视图
 
 创建表单_form.blade.php：
+
+{% raw %}
 
 ```html
 <div class="row">
@@ -672,7 +688,11 @@ success.blade.php 文件内容如下:
 </div>
 ```
 
+{% endraw %}
+
 *   创建编辑视图文件edit.blade.php
+
+{% raw %}
 
 ```html
 @extends('admin.layouts.main')
@@ -712,7 +732,11 @@ success.blade.php 文件内容如下:
 
 ```
 
+{% endraw %}
+
 *   创建新建视图文件create.blade.php
+
+{% raw %}
 
 ```html
 @extends('admin.layouts.main')
@@ -746,6 +770,7 @@ success.blade.php 文件内容如下:
 @stop
 
 ```
+{% endraw %}
 
 *   创建删除
 

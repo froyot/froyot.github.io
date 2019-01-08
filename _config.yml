@@ -24,7 +24,7 @@ github_username:  froyot
 weibo_username: tahition
 pagekeywords: PHP开发,web开发,Yii2.0 框架,ThinkPHP5 框架,Python
 pagediscription: 记录所学，所用,所见，所闻，一起啊。
-
+wechat: "http://blog.static.aiaiaini.com/wechat.jpg"
 
 # Build settings
 markdown: kramdown
@@ -87,6 +87,8 @@ follow:
   - class: icon-jianshu
     url: http://www.jianshu.com/users/cf64e8128c5f/latest_articles
 
+
+excerpt_separator: <!-- more -->
 
 #Links
 customLinks:

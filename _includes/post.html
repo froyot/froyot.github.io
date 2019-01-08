@@ -16,38 +16,15 @@
         <meta name="keywords" content="{{ site.pagekeywords }}">
     {% endif %}
     
-    <meta name="author" content="{{ site.author.name }}">
-
-    <!-- Enable responsive viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le styles -->
-    <link href="{{ site.BASE_PATH }}/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
-    <link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
-
-    <!-- Le fav and touch icons -->
-    <!-- Update these with your own images
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-    -->
-
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.BASE_PATH }}/feed.xml">
+    {% include header.html %}
+    
 </head>
 
 <body>
 
 
     <!-- nav-menu-dropdown -->
-    <div class="btn-group hidden-xs" id="nav-menu">
+    <div  id="nav-menu">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
             <i class="fa fa-bars"></i>
         </button>
@@ -75,11 +52,12 @@
         </ul>
     </div>
 
-    <div class="col-sm-2 sidebar hidden-xs" style="{% if site.sidebar_background_image %}background: url({{site.sidebar_background_image}}) no-repeat !important;{% endif %}">
+
+    <div class="sidebar" style="{% if site.sidebar_background_image %}background: url({{site.sidebar_background_image}}) no-repeat !important;{% endif %}">
         {% include sidebar.html %}
     </div>
 
-    <div class="col-sm-10 col-sm-offset-2">
+    <div class="pagecontent">
         <div class="article article-post">
             <h2 class="title">{{ page.title }}</h2>
             <div class="info">
@@ -92,20 +70,17 @@
             {{ content }}
             <nav class="article-previous fn-clear">
                 {% if page.previous %}
-                <a class="prev" href="{{site.baseurl}}{{ page.previous.url }}" rel="bookmark">&laquo;&nbsp;{{ page.previous.title | truncatewords:5 }}</a>
+                <div><a class="prev" href="{{site.baseurl}}{{ page.previous.url }}" rel="bookmark">&laquo;&nbsp;{{ page.previous.title | truncatewords:5 }}</a></div>
                 {% endif %}
                 {% if page.next %}
-                <a class="next" href="{{site.baseurl}}{{ page.next.url }}" rel="bookmark">{{ page.next.title | truncatewords:5 }}&nbsp;&raquo;</a>
+                <div><a class="next" href="{{site.baseurl}}{{ page.next.url }}" rel="bookmark">{{ page.next.title | truncatewords:5 }}&nbsp;&raquo;</a></div>
                 {% endif %}
             </nav>
             <div class="comment">
-                {% if site.disqus.config %}
+                <h3>评论</h3>
                 <div id="disqus_thread"></div>
-                {% else %}
-                    {% if site.duoshuo.config %}
-                    <div class="ds-thread"></div>
-                    {% endif %}
-                {% endif %}
+                
+                   
             </div>
         </div>
 
@@ -116,24 +91,12 @@
                 &copy; {{ site.time | date: '%Y' }} {{ site.author.name }} with <a href="http://jekyllrb.com/">Jekyll</a>. Theme: <a href="https://github.com/dbtek/dbyll">dbyll</a> by dbtek.
             </p>
         </footer>
+
     </div>
-<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256551693'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1256551693%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 
+{% include valinejscomment.html %}
+{% include footer.html %}
 
-
-    <script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
-    
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?7bae0ce20d37bbb0fd8c00956e970ea5";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
     
     
 </body>

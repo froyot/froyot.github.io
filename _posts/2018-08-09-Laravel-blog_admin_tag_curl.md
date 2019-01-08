@@ -128,6 +128,8 @@ Route::namespace('Admin')->middleware(['auth'])->group(function () {
 ```
 在resources/views/admin/tag下创建index.blade.php视图文件
 
+{% raw %}
+
 ```html
 @extends('admin.layouts.main')
 @section('content')
@@ -198,6 +200,8 @@ Route::namespace('Admin')->middleware(['auth'])->group(function () {
 </div>
 @endsection
 ```
+
+{% endraw %}
 
 到这里，控制器方法，模板创建成功。访问```http://127.0.0.1:8000/admin/tag```可以看到界面显示出来了，但是没有数据。因此需要填充一些数据。
 
@@ -424,6 +428,8 @@ class TagCreateRequest extends FormRequest
 
 在resources\views\admin\tag下添加create.blade.php视图文件
 
+{% raw %}
+
 ```html
 @extends('admin.layouts.main')
 @section('content')
@@ -456,7 +462,12 @@ class TagCreateRequest extends FormRequest
 @stop
 
 ```
+
+{% endraw %}
+
 create视图文件引入了表单视图。在相同文件夹下创建_form.blade.php视图文件:
+
+{% raw %}
 
 ```
 <div class="row">
@@ -538,6 +549,8 @@ create视图文件引入了表单视图。在相同文件夹下创建_form.blade
 
 ```
 
+{% endraw %}
+
 到这里标签创建的部分就结束了，访问```http://127.0.0.1:8000/admin/tag/create```可以看到以下内容
 ![image](http://blog.static.aiaiaini.com/larval-tag-create-xdsdf892j34ak23kz8234ka82ksad028ksd91243.png)
 
@@ -587,6 +600,8 @@ class TagUpdateRequest extends TagCreateRequest
 
 在resources\views\admin\tag下添加edit.blade.php
 
+{% raw %}
+
 ```html
 @extends('admin.layouts.main')
 @section('content')
@@ -625,6 +640,8 @@ class TagUpdateRequest extends TagCreateRequest
 
 ```
 
+{% endraw %}
+
 #### 删除标签
 
 在TagController下添加以下内容:
@@ -641,6 +658,8 @@ class TagUpdateRequest extends TagCreateRequest
 
 在index.blade.php中的edit后面添加以下内容:
 
+{% raw %}
+
 ```php
 <form style="display:inline" action="/admin/tag/{{ $tag->id }}" method="post">
     @csrf
@@ -651,6 +670,9 @@ class TagUpdateRequest extends TagCreateRequest
 </form>
 
 ```
+
+{% endraw %}
+
 因为使用的是resouce路由，laravel的resouce路由只接受delete提交或者模拟delete提交，因此需要一个表单，添加```@method('DELETE')```的方式模拟delete请求。
 
 以上就是Laravel5.6 博客 中文章标题的增删改查操作！

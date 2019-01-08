@@ -177,6 +177,7 @@ class BlogController extends Controller
 在resources/view下建立***blog文件夹***，分别添加index.blade.php,post.blade.php文件分别用户博客列表和详情的展示
 
 index.blade.php
+{% raw %}
 
 ```html
 <html>
@@ -207,10 +208,12 @@ index.blade.php
 </html>
 
 ```
-
+{% endraw %}
 post.blade.php
 
+{% raw %}
 ```html
+
 <html>
     <head>
         <title>{{ $post->title }}</title>
@@ -231,6 +234,7 @@ post.blade.php
 </html>
 
 ```
+{% endraw %}
 
 ### 效果
 执行```php artisan serve``` 启动服务，在浏览器中输入http://127.0.0.1:8080 浏览器会跳转到http://127.0.0.1:8080/blog 并展示下面内容

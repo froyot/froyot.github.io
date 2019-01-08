@@ -43,6 +43,9 @@ Laravel文件上传Storage使用的是local disk，上传文件保存在/storage
 ```
 *	视图文件
 在resources/admin/file下新建index.blade.php，模板中使用table渲染文件目录列表
+
+{% raw %}
+
 ```html
     <table id="posts-table" class="table table-striped table-bordered">
             <thead>
@@ -71,6 +74,7 @@ Laravel文件上传Storage使用的是local disk，上传文件保存在/storage
     </tbody>
     </table>
 ```
+{% endraw %}
 
 *	添加路由
 在routes/web.php中的```php Route::namespace('Admin')->middleware(['auth'])->group```添加以下内容

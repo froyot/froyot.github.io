@@ -23,7 +23,11 @@ json_encode接受三个参数，但是一般的，我们都是使用一个参数
 |JSON_UNESCAPED_UNICODE |以字面编码多字节 Unicode 字符(不使用\u形式编码)|
 |JSON_PRETTY_PRINT |用空白字符格式化返回的数据|
 
-json_encode多个选项使用的是多个选项进行或运算得到。json_encode($value,JSON_FORCE_OBJECT|JSON_NUMERIC_CHECK|JSON_UNESCAPED_UNICODE) 表示如果空的时候，返回对象。数字返回数字类型，不编码。
+
+
+json_encode多个选项使用的是多个选项进行或运算得到。```json_encode($value,JSON_FORCE_OBJECT|JSON_NUMERIC_CHECK|JSON_UNESCAPED_UNICODE) ```表示如果空的时候，返回对象。数字返回数字类型，不编码。
+
+<!-- more -->
 
 
 ```php
@@ -55,7 +59,7 @@ json_encode最后一个参数是depth，表示迭代深度。php中json解析是
 查看php源码中json扩展的内容json_encode.c文件,递归出现在encode的时候。每次进入json_encode_array中层级加1，如果递归次数超过配置次数，直接返回FAILURE。
 
 ```c
-int php_json_encode_zval(smart_str *buf, zval *val, int options, php_json_encoder *encoder) /* {{{ */
+int php_json_encode_zval(smart_str *buf, zval *val, int options, php_json_encoder *encoder) 
 {
 	again:
 	switch (Z_TYPE_P(val))
@@ -68,7 +72,7 @@ int php_json_encode_zval(smart_str *buf, zval *val, int options, php_json_encode
 	return SUCCESS;
 }
 
-static int php_json_encode_array(smart_str *buf, zval *val, int options, php_json_encoder *encoder) /* {{{ */
+static int php_json_encode_array(smart_str *buf, zval *val, int options, php_json_encoder *encoder)
 {
 	...
 	++encoder->depth;
