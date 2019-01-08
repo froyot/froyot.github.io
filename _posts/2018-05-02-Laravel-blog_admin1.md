@@ -28,6 +28,9 @@ Laravel 中实现登录认证非常简单。实际上，几乎所有东西 Larav
 
     -   ResetPasswordController 重置密码相关操作
 
+<!-- more -->
+
+
 *   添加路由:
 
 routes/web.php文件中添加用户认证相关路由

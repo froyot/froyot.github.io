@@ -31,6 +31,9 @@ keywords: YII2,ThinkPHP5,获取请求头,写PHP的老王
         return $headers;
     }
 ```
+
+<!-- more -->
+
 Yii2中采用了两个函数```getallheaders```，```http_get_request_headers``` 尝试获取请求头。```getallheaders```函数是函数```apache_request_headers```的别名。如果函数不存在，再通过_SERVER获取。_SERVER获取请求头，将下划线转换成中划线，首字母大写的请求头。
 
 ### Thinkphp5获取所有请求头

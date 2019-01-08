@@ -19,6 +19,8 @@ keywords: Yii2,http返回码,web响应输出,文件下载
 *   触发后置事件。触发Response后置操作
 *   数据清理
 
+<!-- more -->
+
 #### Yii2的Response
 
 *   http状态码明确。在web/Response 文件中定义了状态码数组，几乎涵盖了所有的http状态码，并给出了标注的状态码文字说明。如果想了解http状态码，看Yii2的Response文件就足够了。

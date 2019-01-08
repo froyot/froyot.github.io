@@ -18,6 +18,9 @@ keywords: ThinkCmf,PHP,后台模板 material
 
 *   继承的继承模板创建好之后，需要一个个的去修改原有页面的代码，添加模板继承，将不需要改动的地方放入content block 中
 
+<!-- more -->
+
+
 ### thinkcmf-admin-materialdashboard 介绍
 
 

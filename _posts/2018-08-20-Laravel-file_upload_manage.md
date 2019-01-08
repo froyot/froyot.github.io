@@ -17,6 +17,8 @@ keywords: Laravel,PHP,文件上传,博客,CURD
 *	createFolder 创建新文件夹
 *	delete 删除文件或目录
 
+<!-- more -->
+
 我们在app/Services目录下创建一个UploadsManager服务类，用了处理上传文件以及文件目录等相关操作。实现方法
 
 *	folderInfo 获取指定目录下所有文件和目录列表，以及当前目录路径

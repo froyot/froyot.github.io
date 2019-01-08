@@ -25,6 +25,8 @@ $todaycount = $todayquery->count();
 
 ```
 
+<!-- more -->
+
 thinkphp5版本
 
 ```php

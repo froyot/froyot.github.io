@@ -33,6 +33,8 @@ CREATE TABLE `slugs` (
 |	10	|	民生		|	3	|
 
 
+<!-- more -->
+
 *	posts
 
 | post_id	|post_name	|

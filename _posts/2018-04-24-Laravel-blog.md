@@ -26,6 +26,8 @@ Laravel 框架对PHP版本和扩展有一定要求
 执行 ```composer global require "laravel/installer"```, 安装laravel之后配置环境变量,执行```laravel new blog```
 
 
+<!-- more -->
+
 ### 配置
 
 *   编辑.env 修改数据库用户名密码，数据库名称，.env本身是隐藏文件，注意开启显示隐藏文件

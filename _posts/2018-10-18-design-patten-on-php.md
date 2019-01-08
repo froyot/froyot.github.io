@@ -53,6 +53,9 @@ class WebApp extends BaseApp{
 
 ```
 
+<!-- more -->
+
+
 1)简单工厂模式，通过参数创建指定类
 
 ```php
