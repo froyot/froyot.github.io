@@ -3,7 +3,7 @@ layout: default
 title: Contact
 comment: true
 ---
-
+http://static.aiaiaini.com/blog_CgQIzlSdfmWAMydRAAN7zIi3PoU29000.jpg
 <div class="article">
     <h3 class="title">{{ page.title }}</h3>
     <div class="about">
@@ -13,7 +13,11 @@ comment: true
             {{ site.author.detailIntro }}
         </div>
         <div class="about-image">
-            <img src="{{ site.author.imageLink }}" />
+            <span>微信公众号:写PHP的老王</span>
+            <img src="{{ site.wechat }}" />
+        </div>
+        <div class="about-wechat">
+            <span>个人微信:tahition</span>
         </div>
     </div>
     <div>
@@ -29,14 +33,5 @@ comment: true
     <div class="fn-clear"></div>
     <div class="contact">
         <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
-    </div>
-    <div class="comment">
-        {% if site.disqus.config %}
-        <div id="disqus_thread"></div>
-        {% else %}
-            {% if site.duoshuo.config %}
-            <div class="ds-thread"></div>
-            {% endif %}
-        {% endif %}
     </div>
 </div>
