@@ -66,7 +66,7 @@ var_dump($newstr);
 
 
 ```c
-static void php_string_shuffle(char *str, zend_long len) /* {{{ */
+static void php_string_shuffle(char *str, zend_long len) 
 {
 	zend_long n_elems, rnd_idx, n_left;
 	char temp;
