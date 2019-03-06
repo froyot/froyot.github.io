@@ -140,9 +140,14 @@ for (haystack_ptr = ZSTR_VAL(haystack); haystack_ptr < (ZSTR_VAL(haystack) + ZST
 
 strpos 返回的是完整匹配查询字符串的第一次出现位置。strpos('ABCGCAC','CA')返回结果是4。
 
-strpbrk 返回的是字符列表中匹配的任意一个字符第一次出现之后的字符串。 strpbrk('ABCGCAC','CA') 返回的内容是ABCGCAC
+strpbrk 返回的是字符列表中匹配的任意一个字符第一次出现之后的字符串。 strpbrk('ABCGCAC','CA') 返回的内容是ABCGCAC,如果传入整数，会转成字符类型strpbrk('ABC13G2CAC','123') 返回13G2CAC
 
 strstr 返回的是完整匹配查询字符串第一次后出现后的字符串,strstr('ABCGCAC','CA') 返回结果CAC
 
 
 道路千万条，性能优化第一条，一点点的提升也是提升，只需要选择函数的时候合理选择。
+
+字符串处理函数中，以下函数传入整数是当做ascii值去查找
+
+1、strpos,stripos,strrpos,strripos
+2、strstr,stristr,strrstr,strchar,strrchar
