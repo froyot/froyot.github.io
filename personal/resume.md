@@ -9,7 +9,7 @@
 
 手机: 18565727169              &nbsp;&nbsp;&nbsp; E-mail: xianlong300@sina.com
 
-求职岗位:PHP开发              &nbsp;&nbsp;&nbsp; 期望薪资:22-26K
+求职岗位:PHP开发              
 
 -------------
 
