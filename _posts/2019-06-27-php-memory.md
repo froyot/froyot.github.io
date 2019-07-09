@@ -20,6 +20,8 @@ keywords: 不知不觉踩到PHP内存泄漏的雷
 
 用一下简化版说明一下其中的问题:
 
+[!image](http://blog.static.aiaiaini.com/blog-2019-06-27-01.JPG)
+
 ```php
 
 class Channel{
@@ -87,7 +89,7 @@ PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted
 
 可以看出，跑了4500次之后内存就已经操作128M了。如果Channel中没有connection的属性，则会有不一样的结果。我们把Channel的构造方法注释掉，再重新跑
 
-```
+```sh
 start time 2019-06-17 13:34:34
 2019-06-17 13:34:34 instance memory [0]218.8046875k
 2019-06-17 13:34:34 instance memory [300]218.8125k
@@ -134,7 +136,7 @@ for($i=0;$i<20000;$i++){
 
 输出内容如下:
 
-```
+```sh
 
 start time 2019-06-17 13:43:41
 2019-06-17 13:43:41 instance memory [0]219.125k
