@@ -1,13 +1,12 @@
-不知不觉踩到PHP内存泄漏的雷
-
 ---
 layout: post
 title: 不知不觉踩到PHP内存泄漏的雷
 category: php
 comments: true
 description: 不知不觉踩到PHP内存泄漏的雷
-keywords: 不知不觉踩到PHP内存泄漏的雷
+keywords: php,内存泄漏,循环引用
 ---
+
 
 
 最近工作上需要排查php频繁达到内存限制进程被杀掉的原因。项目中使用php写一个死循环，把mysql的数据同步到mq或者mongodb当中。内存问题主要出现在mq消息的发布上。项目中有使用到php-amqplib。
