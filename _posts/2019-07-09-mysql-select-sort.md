@@ -33,6 +33,8 @@ id    page_id        addtime
 
 1） 对select的结果没有任何条件进行select,顺序是怎么样？
 
+<!-- more -->
+
 对于查询结果集直接进行select查询，特别是已排序的结果集，会改变数据的顺序。
 
 
