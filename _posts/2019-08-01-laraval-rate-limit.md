@@ -1,4 +1,13 @@
-Dingo Api 的限流在Laravel的限流基础上做了哪些修改？
+
+---
+layout: post
+title: Dingo Api 的限流在Laravel的限流基础上做了哪些修改？
+category: php
+comments: true
+description: Dingo Api 的限流在Laravel的限流基础上做了哪些修改
+keywords: Dingo,Laravel，api限流
+---
+
 
 今天看文档的时候看到 Laravel的 节流限速 (throttling) 。网络上搜索，又看到了Dingo 的节流限速的文档。因此查看Laravel 与Dingo的源码，对比两者之间的相同点与不同点。
 
